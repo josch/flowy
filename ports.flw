@@ -1,0 +1,46 @@
+splitter S {}
+
+filter www_req {
+	dstport = 443 OR dstport = 80 OR dstport = 8080
+	unix_secs > 1259413200
+	unix_secs < 1259445600
+}
+
+filter www_res {
+	unix_secs < 1259445600
+	unix_secs > 1259413200
+	srcport = 443 OR srcport = 80 OR srcport = 8080
+}
+
+grouper g_www_req {
+   module g1 {
+   }
+   aggregate bitOR(tcp_flags) as flags
+}
+
+grouper g_www_res {
+   module g1 {
+   }
+   aggregate bitOR(tcp_flags) as flags
+}
+
+groupfilter ggf {
+  bitAND(flags, 0x13) = 0x13
+}
+
+merger M {
+   module m1 {
+	branches B, A 
+#	B.stime = 1259413200 AND B.etime = 1259445600
+	A d B OR B d A
+#	B o A delta 32400s
+   }
+   export m1
+}
+
+ungrouper U {}
+
+"./h5ports.h5" -> S
+S branch A -> www_req -> g_www_req -> ggf -> M
+S branch B -> www_res -> g_www_res -> ggf -> M
+M->U->"./portsungroped.h5"

@@ -1,0 +1,25 @@
+0.82
+[Input('./netflow-trace.h5', 50, set([]), set([]), set([])), BranchNode('S', 50, set([]), set([]))]
+
+[BranchNode('S', 51, set([]), set([])), Branch('A', 51, None, set([]), set([])), BranchNode('www_req', 51, set([]), set([])), BranchNode('g_www_req', 51, set([]), set([])), BranchNode('ggf', 51, set([]), set([])), BranchNode('M', 51, set([]), set([]))]
+
+[BranchNode('S', 52, set([]), set([])), Branch('B', 52, None, set([]), set([])), BranchNode('www_res', 52, set([]), set([])), BranchNode('g_www_res', 52, set([]), set([])), BranchNode('ggf', 52, set([]), set([])), BranchNode('M', 52, set([]), set([]))]
+
+[BranchNode('M', 53, set([]), set([])), BranchNode('U', 53, set([]), set([])), Output('./ungroped.h5', 53, set([]), set([]), set([]))]
+
+Splitter initiated
+Parsing and validation finished: 0.31
+Started filtering
+Finished filtering
+Filters ready
+Splitter time elapsed: 346.66
+Finished grouping branch B
+Finished grouping branch A
+Finished filtering groups for branch B
+Finished filtering groups for branch A
+Group filter time elapsed: 916.19
+Finished merging branches:  ['B', 'A']
+Merger time elapsed: 1037.532704
+Ungrouper U finished exectution
+FINISHED!
+Overall time elapsed: 1073.552704

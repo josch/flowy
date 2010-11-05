@@ -1,0 +1,48 @@
+splitter S {}
+
+filter www_req {
+	dstport = 80
+}
+
+filter www_res {
+	dstport = 80
+}
+
+grouper g_www_req {
+   module g1 {
+      dstport = dstport
+      etime < stime rdelta 1s
+   }
+   aggregate srcip, dstip, sum(bytes) as bytes, count(rec_id) as n,
+   bitOR(tcp_flags) as flags, union(srcport) as srcports
+}
+
+grouper g_www_res {
+   module g1 {
+      srcport = srcport
+      etime < stime rdelta 1s
+   }
+   aggregate srcip, dstip, sum(bytes) as bytes, count(rec_id) as n,
+   bitOR(tcp_flags) as flags, union(srcport) as srcports
+}
+
+
+
+groupfilter ggf {
+  bitAND(flags, 0x13) = 0x13
+}
+
+
+merger M {
+   module m1 {
+	branches A, B
+   }
+   export m1
+}
+
+ungrouper U {}
+
+"./netflow-trace.h5" -> S
+S branch A -> www_req -> g_www_req -> ggf -> M
+S branch B -> www_res -> g_www_res -> ggf -> M
+M->U->"./ungroped.h5"

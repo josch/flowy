@@ -1,0 +1,1387 @@
+0.97
+[Input('./netflow-trace.h5', 50, set([]), set([]), set([])), BranchNode('S', 50, set([]), set([]))]
+
+[BranchNode('S', 51, set([]), set([])), Branch('A', 51, None, set([]), set([])), BranchNode('www_req', 51, set([]), set([])), BranchNode('g_www_req', 51, set([]), set([])), BranchNode('ggf', 51, set([]), set([])), BranchNode('M', 51, set([]), set([]))]
+
+[BranchNode('S', 52, set([]), set([])), Branch('B', 52, None, set([]), set([])), BranchNode('www_res', 52, set([]), set([])), BranchNode('g_www_res', 52, set([]), set([])), BranchNode('ggf', 52, set([]), set([])), BranchNode('M', 52, set([]), set([]))]
+
+[BranchNode('M', 53, set([]), set([])), BranchNode('U', 53, set([]), set([])), Output('./ungroped.h5', 53, set([]), set([]), set([]))]
+
+Splitter initiated
+Parsing and validation finished: 2.22
+Started filtering
+Finished filtering
+Filters ready
+Splitter time elapsed: 1130.1
+Finished grouping branch B
+Finished filtering groups for branch B
+Finished grouping branch A
+Finished filtering groups for branch A
+Group filter time elapsed: 2123.665408
+Finished merging branches:  ['B', 'A']
+Merger time elapsed: -185.553776
+Ungrouper U finished exectution
+FINISHED!
+Overall time elapsed: -114.543776
+(('IncrementalEncoder', '/usr/lib/python2.6/encodings/latin_1.py', 20), (1, 3.0994415283203125e-05, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 2), (1, 3.0994415283203125e-05, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/groupfilter_validator.py', 12), (1, 0.35587811470031738, 0.34402200000000027))
+ 
+(('p_group_filter', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 263), (1, 0.00046992301940917969, 0.0))
+ 
+(('close', '/home/melnikovkolya/classes/semester-3-project/flowy/pytables.py', 78), (1, 0.33764791488647461, 0.0039999999971769284))
+ 
+(('get_branches_allen_index_ops', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 313), (1, 8.0108642578125e-05, 0.0))
+ 
+(('Codec', '/usr/lib/python2.6/encodings/latin_1.py', 13), (1, 3.910064697265625e-05, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 17), (1, 0.14102602005004883, 0.1320089999999996))
+ 
+(('validate_tokens', '/usr/lib/pymodules/python2.6/ply/lex.py', 594), (1, 0.00038218498229980469, 0.0))
+ 
+(('__init__', '/usr/lib/pymodules/python2.6/ply/yacc.py', 118), (1, 3.0994415283203125e-05, 0.0))
+ 
+(('__repr__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 43), (1, 6.008148193359375e-05, 0.0))
+ 
+(('oi', '/home/melnikovkolya/classes/semester-3-project/flowy/allen_index.py', 69), (1, 2.3126602172851562e-05, 0.0))
+ 
+(('p_args_more', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 403), (1, 0.00016498565673828125, 0.0))
+ 
+(('validate', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 329), (1, 0.002529144287109375, 0.0040000000000000036))
+ 
+(('get_merger_table_impl', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 382), (1, 0.09451603889465332, 0.084004999999999885))
+ 
+(('d', '/home/melnikovkolya/classes/semester-3-project/flowy/allen_index.py', 82), (1, 2.4080276489257812e-05, 0.0))
+ 
+(('p_branches1', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 680), (1, 0.00017094612121582031, 0.0))
+ 
+(('go', '/home/melnikovkolya/classes/semester-3-project/flowy/splitter.py', 11), (1, 1090.2936701774597, 1133.1228150000002))
+ 
+(('get_default_values', '/usr/lib/python2.6/optparse.py', 1313), (1, 0.00064682960510253906, 0.0))
+ 
+(('<module>', '/home/melnikovkolya/classes/semester-3-project/flowy/flowy_exec.py', 1), (1, 0.00023794174194335938, 0.98005999999999993))
+ 
+(('check_allen_reachability', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 150), (1, 0.00019001960754394531, 0.0))
+ 
+(('<module>', '/home/melnikovkolya/classes/semester-3-project/flowy/parsetab.py', 4), (1, 0.01084589958190918, 0.012000000000000011))
+ 
+(('go', '/home/melnikovkolya/classes/semester-3-project/flowy/ungrouper.py', 29), (1, 77.383197784423828, 70.288392999998905))
+ 
+(('__init__', '/usr/lib/python2.6/optparse.py', 365), (1, 0.00017595291137695312, 0.0))
+ 
+(('get_tokens', '/usr/lib/pymodules/python2.6/ply/lex.py', 574), (1, 5.3882598876953125e-05, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/filter.py', 55), (1, 0.00030398368835449219, 0.0))
+ 
+(('p_merger_module0', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 659), (1, 0.0001010894775390625, 0.0))
+ 
+(('sort_branches', '/home/melnikovkolya/classes/semester-3-project/flowy/splitter_validator.py', 15), (1, 0.00016307830810546875, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/merger.py', 4), (1, 4.00543212890625e-05, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/allen_index.py', 87), (1, 3.7908554077148438e-05, 0.0))
+ 
+(('setprofile', '/usr/lib/python2.6/threading.py', 84), (1, 2.5987625122070312e-05, 0.0))
+ 
+(('p_export', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 684), (1, 0.00016498565673828125, 0.0))
+ 
+(('find_name_to_merger_records_file', '/home/melnikovkolya/classes/semester-3-project/flowy/ungrouper_validator.py', 39), (1, 1.6223840713500977, 0.044001999998727115))
+ 
+(('_populate_option_list', '/usr/lib/python2.6/optparse.py', 1252), (1, 0.0051400661468505859, 0.0040000000000000036))
+ 
+(('order_merger_rules', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 247), (1, 0.0043649673461914062, 0.0040000000000000036))
+ 
+(('p_output_branch', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 486), (1, 0.00031900405883789062, 0.0))
+ 
+(('find_name_to_groups', '/home/melnikovkolya/classes/semester-3-project/flowy/ungrouper_validator.py', 47), (1, 0.28166508674621582, 0.11600700000053621))
+ 
+(('__init__', '/usr/lib/python2.6/optparse.py', 932), (1, 0.00022912025451660156, 0.0))
+ 
+(('_splitext', '/usr/lib/python2.6/genericpath.py', 85), (1, 7.7962875366210938e-05, 0.0))
+ 
+(('get_index_rule_impl', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 367), (1, 0.0034859180450439453, 0.0040009999999996992))
+ 
+(('dgettext', '/usr/lib/python2.6/gettext.py', 542), (1, 0.0038430690765380859, 0.0040000000000000036))
+ 
+(('mi', '/home/melnikovkolya/classes/semester-3-project/flowy/allen_index.py', 41), (1, 3.1948089599609375e-05, 0.0))
+ 
+(('check_field_refs', '/home/melnikovkolya/classes/semester-3-project/flowy/groupfilter_validator.py', 33), (1, 0.00054502487182617188, 0.0))
+ 
+(('set_parser', '/usr/lib/python2.6/optparse.py', 224), (1, 2.4080276489257812e-05, 0.0))
+ 
+(('order_allen_ops_args', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 85), (1, 0.00036096572875976562, 0.0))
+ 
+(('read_table', '/usr/lib/pymodules/python2.6/ply/yacc.py', 1821), (1, 0.027589082717895508, 0.028001000000000165))
+ 
+(('m', '/home/melnikovkolya/classes/semester-3-project/flowy/allen_index.py', 27), (1, 2.288818359375e-05, 0.0))
+ 
+(('create_impl', '/home/melnikovkolya/classes/semester-3-project/flowy/filter_validator.py', 158), (1, 0.0055849552154541016, 0.0080000000000000071))
+ 
+(('_add_help_option', '/usr/lib/python2.6/optparse.py', 1242), (1, 0.0050837993621826172, 0.0040000000000000036))
+ 
+(('check_duplicate_filter_names', '/home/melnikovkolya/classes/semester-3-project/flowy/filter_validator.py', 32), (1, 0.00013208389282226562, 0.0))
+ 
+(('validate_all', '/usr/lib/pymodules/python2.6/ply/lex.py', 567), (1, 0.28138995170593262, 0.27201699999999995))
+ 
+(('get_rules_impl', '/home/melnikovkolya/classes/semester-3-project/flowy/groupfilter_validator.py', 69), (1, 0.0014450550079345703, 0.0))
+ 
+(('parseopt_notrack', '/usr/lib/pymodules/python2.6/ply/yacc.py', 869), (1, 0.16629600524902344, 0.16800999999999999))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 12), (1, 3.1948089599609375e-05, 0.0))
+ 
+(('__repr__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 29), (1, 7.1048736572265625e-05, 0.0))
+ 
+(('s', '/home/melnikovkolya/classes/semester-3-project/flowy/allen_index.py', 135), (1, 3.3140182495117188e-05, 0.0))
+ 
+(('check_for_unused_filters', '/home/melnikovkolya/classes/semester-3-project/flowy/groupfilter_validator.py', 52), (1, 3.3140182495117188e-05, 0.0))
+ 
+(('check_allen_ops', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 96), (1, 0.00050592422485351562, 0.0040000000000000036))
+ 
+(('<module>', '/usr/lib/python2.6/hashlib.py', 55), (1, 0.0026788711547851562, 0.0))
+ 
+(('create_rule_implementations', '/home/melnikovkolya/classes/semester-3-project/flowy/filter_validator.py', 126), (1, 0.00099492073059082031, 0.0040000000000000036))
+ 
+(('check_allen_satisfiability', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 116), (1, 4.1961669921875e-05, 0.0))
+ 
+(('create_impl', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper_validator.py', 151), (1, 0.038751840591430664, 0.040001999999999871))
+ 
+(('_get_args', '/usr/lib/python2.6/optparse.py', 1356), (1, 7.4863433837890625e-05, 0.0))
+ 
+(('StreamConverter', '/usr/lib/python2.6/encodings/latin_1.py', 34), (1, 3.4093856811523438e-05, 0.0))
+ 
+(('find_mergers_export_modules', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 59), (1, 4.5061111450195312e-05, 0.0))
+ 
+(('validate_file', '/usr/lib/pymodules/python2.6/ply/lex.py', 829), (1, 0.06090092658996582, 0.060003999999999946))
+ 
+(('p_opt_or_allen_rule', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 760), (1, 0.00027298927307128906, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/allen_index.py', 74), (1, 3.4809112548828125e-05, 0.0))
+ 
+(('_process_args', '/usr/lib/python2.6/optparse.py', 1414), (1, 4.6014785766601562e-05, 0.0))
+ 
+(('ready', '/home/melnikovkolya/classes/semester-3-project/flowy/splitter.py', 24), (1, 6.5088272094726562e-05, 0.0))
+ 
+(('__init__', '/usr/lib/pymodules/python2.6/ply/lex.py', 79), (1, 3.1948089599609375e-05, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 182), (1, 0.56630086898803711, 0.55203500000000005))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 36), (1, 4.7206878662109375e-05, 0.0))
+ 
+(('_get_all_options', '/usr/lib/python2.6/optparse.py', 1307), (1, 3.4093856811523438e-05, 0.0))
+ 
+(('parse_args', '/usr/lib/python2.6/optparse.py', 1362), (1, 0.00095796585083007812, 0.0040000000000000036))
+ 
+(('change_branch_names_to_id', '/home/melnikovkolya/classes/semester-3-project/flowy/filter_validator.py', 50), (1, 0.00050210952758789062, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 9), (1, 0.48897290229797363, 0.47603000000000018))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper_validator.py', 10), (1, 0.39739584922790527, 0.35602199999999984))
+ 
+(('get_merger_impl', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 396), (1, 0.10486102104187012, 0.096006999999999731))
+ 
+(('p_branches1_n', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 673), (1, 0.00031900405883789062, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/splitter_validator.py', 7), (1, 0.55339598655700684, 0.30001899999999981))
+ 
+(('evaluate_rule', '/home/melnikovkolya/classes/semester-3-project/flowy/validator_common.py', 72), (1, 4.6014785766601562e-05, 0.0))
+ 
+(('__init__', '/usr/lib/pymodules/python2.6/ply/yacc.py', 240), (1, 2.9087066650390625e-05, 0.0))
+ 
+(('__init__', '/usr/lib/pymodules/python2.6/ply/lex.py', 545), (1, 6.8902969360351562e-05, 0.0))
+ 
+(('input', '/usr/lib/pymodules/python2.6/ply/lex.py', 251), (1, 6.6041946411132812e-05, 0.0040000000000000036))
+ 
+(('set_description', '/usr/lib/python2.6/optparse.py', 964), (1, 2.3126602172851562e-05, 0.0))
+ 
+(('check_for_unused_filters', '/home/melnikovkolya/classes/semester-3-project/flowy/filter_validator.py', 23), (1, 5.6028366088867188e-05, 0.0))
+ 
+(('go', '/home/melnikovkolya/classes/semester-3-project/flowy/merger.py', 107), (1, 15145.504531860352, 14870.641358000001))
+ 
+(('GT', '/home/melnikovkolya/classes/semester-3-project/flowy/allen_index.py', 14), (1, 2.3126602172851562e-05, 0.0))
+ 
+(('validate', '/home/melnikovkolya/classes/semester-3-project/flowy/groupfilter_validator.py', 47), (1, 0.00074887275695800781, 0.0))
+ 
+(('__init__', '/usr/lib/python2.6/optparse.py', 200), (1, 0.00011801719665527344, 0.0))
+ 
+(('create_impl', '/home/melnikovkolya/classes/semester-3-project/flowy/splitter_validator.py', 21), (1, 0.0024619102478027344, 0.0))
+ 
+(('lex', '/usr/lib/pymodules/python2.6/ply/lex.py', 865), (1, 0.48882603645324707, 0.47603000000000018))
+ 
+(('__init__', '/usr/lib/python2.6/optparse.py', 1185), (1, 0.0058839321136474609, 0.0080009999999999248))
+ 
+(('check_field_refs', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper_validator.py', 53), (1, 0.0012209415435791016, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 22), (1, 3.0994415283203125e-05, 0.0))
+ 
+(('get_states', '/usr/lib/pymodules/python2.6/ply/lex.py', 621), (1, 8.58306884765625e-05, 0.0040000000000000036))
+ 
+(('flush', '/home/melnikovkolya/classes/semester-3-project/flowy/merger.py', 12), (1, 0.66196799278259277, 0.0080010000019683503))
+ 
+(('fi', '/home/melnikovkolya/classes/semester-3-project/flowy/allen_index.py', 122), (1, 5.0067901611328125e-05, 0.0))
+ 
+(('LT', '/home/melnikovkolya/classes/semester-3-project/flowy/allen_index.py', 1), (1, 2.4080276489257812e-05, 0.0))
+ 
+(('o', '/home/melnikovkolya/classes/semester-3-project/flowy/allen_index.py', 55), (1, 2.5987625122070312e-05, 0.0040009999999996992))
+ 
+(('set_conflict_handler', '/usr/lib/python2.6/optparse.py', 959), (1, 2.288818359375e-05, 0.0))
+ 
+(('profile_on', '/home/melnikovkolya/classes/semester-3-project/flowy/profiler.py', 43), (1, 0.0001010894775390625, 0.98005999999999993))
+ 
+(('validate_rules', '/usr/lib/pymodules/python2.6/ply/lex.py', 723), (1, 0.2807769775390625, 0.27201699999999995))
+ 
+(('StreamWriter', '/usr/lib/python2.6/encodings/latin_1.py', 28), (1, 3.3140182495117188e-05, 0.0))
+ 
+(('_create_option_list', '/usr/lib/python2.6/optparse.py', 1237), (1, 8.20159912109375e-05, 0.0))
+ 
+(('resolve_branches', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 868), (1, 0.0021741390228271484, 0.0040010000000001433))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/splitter.py', 5), (1, 5.91278076171875e-05, 0.0))
+ 
+(('create_masks', '/home/melnikovkolya/classes/semester-3-project/flowy/filter_validator.py', 100), (1, 0.001110076904296875, 0.0))
+ 
+(('check_duplicate_module_names', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 46), (1, 6.198883056640625e-05, 0.0))
+ 
+(('__init__', '/usr/lib/pymodules/python2.6/ply/yacc.py', 192), (1, 2.5033950805664062e-05, 0.0))
+ 
+(('p_merger_rule_al_op', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 755), (1, 0.00028109550476074219, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/merger.py', 145), (1, 0.0002269744873046875, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/ungrouper.py', 3), (1, 3.0994415283203125e-05, 0.0))
+ 
+(('_form_master_re', '/usr/lib/pymodules/python2.6/ply/lex.py', 482), (1, 0.18841695785522461, 0.18401200000000006))
+ 
+(('get_pfunctions', '/usr/lib/pymodules/python2.6/ply/yacc.py', 2958), (1, 0.01446986198425293, 0.012000999999999928))
+ 
+(('check_duplicate_merger_names', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 34), (1, 6.389617919921875e-05, 0.0))
+ 
+(('get_error_func', '/usr/lib/pymodules/python2.6/ply/yacc.py', 2865), (1, 4.6968460083007812e-05, 0.0))
+ 
+(('_create_option_mappings', '/usr/lib/python2.6/optparse.py', 943), (1, 3.3855438232421875e-05, 0.0))
+ 
+(('create_impl', '/home/melnikovkolya/classes/semester-3-project/flowy/groupfilter_validator.py', 82), (1, 0.33964705467224121, 0.32802100000000056))
+ 
+(('StreamReader', '/usr/lib/python2.6/encodings/latin_1.py', 31), (1, 3.2186508178710938e-05, 0.0))
+ 
+(('f', '/home/melnikovkolya/classes/semester-3-project/flowy/allen_index.py', 109), (1, 3.7908554077148438e-05, 0.0))
+ 
+(('find', '/usr/lib/python2.6/gettext.py', 421), (1, 0.0036578178405761719, 0.0040000000000000036))
+ 
+(('p_merger_rule0', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 693), (1, 8.9883804321289062e-05, 0.0))
+ 
+(('__init__', '/usr/lib/pymodules/python2.6/ply/lex.py', 115), (1, 4.00543212890625e-05, 0.0))
+ 
+(('get_id_size', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 27), (1, 6.7949295043945312e-05, 0.0))
+ 
+(('__init__', '/usr/lib/pymodules/python2.6/ply/yacc.py', 2763), (1, 6.6995620727539062e-05, 0.0))
+ 
+(('validate', '/home/melnikovkolya/classes/semester-3-project/flowy/filter_validator.py', 146), (1, 0.0040280818939208984, 0.0040000000000000036))
+ 
+(('p_ungrouper', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 497), (1, 0.00028586387634277344, 0.0))
+ 
+(('check_values', '/usr/lib/python2.6/optparse.py', 1401), (1, 2.8133392333984375e-05, 0.0))
+ 
+(('di', '/home/melnikovkolya/classes/semester-3-project/flowy/allen_index.py', 95), (1, 2.288818359375e-05, 0.0))
+ 
+(('check_for_disjoint_modules', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 172), (1, 6.29425048828125e-05, 0.0))
+ 
+(('<module>', '/usr/lib/python2.6/encodings/latin_1.py', 8), (1, 0.0010180473327636719, 0.0040000000000000036))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/filter_validator.py', 10), (1, 0.38966488838195801, 0.34802100000000014))
+ 
+(('splitext', '/usr/lib/python2.6/posixpath.py', 94), (1, 0.0001430511474609375, 0.0))
+ 
+(('p_pipeline_stage_end', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 212), (1, 2.9087066650390625e-05, 0.0))
+ 
+(('create_impl', '/home/melnikovkolya/classes/semester-3-project/flowy/ungrouper_validator.py', 76), (1, 1.5083169937133789, 0.72004500000184635))
+ 
+(('validate_literals', '/usr/lib/pymodules/python2.6/ply/lex.py', 609), (1, 0.00011110305786132812, 0.0))
+ 
+(('check_allen_deltas', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 142), (1, 3.4093856811523438e-05, 0.0))
+ 
+(('get_mergers_impl', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 461), (1, 0.1074979305267334, 0.10000699999999973))
+ 
+(('get_precedence', '/usr/lib/pymodules/python2.6/ply/yacc.py', 2923), (1, 4.6014785766601562e-05, 0.0))
+ 
+(('translation', '/usr/lib/python2.6/gettext.py', 476), (1, 0.0037548542022705078, 0.0040000000000000036))
+ 
+(('check_allen_consistency', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 127), (1, 3.910064697265625e-05, 0.0))
+ 
+(('p_file', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 197), (1, 2.8848648071289062e-05, 0.0))
+ 
+(('p_args', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 396), (1, 0.00030803680419921875, 0.0))
+ 
+(('find_name_to_gr_output', '/home/melnikovkolya/classes/semester-3-project/flowy/ungrouper_validator.py', 65), (1, 0.2986290454864502, 0.24001500000304077))
+ 
+(('get_all', '/usr/lib/pymodules/python2.6/ply/lex.py', 560), (1, 0.013720989227294922, 0.016001000000000154))
+ 
+(('check_duplicate_filter_names', '/home/melnikovkolya/classes/semester-3-project/flowy/groupfilter_validator.py', 21), (1, 6.7949295043945312e-05, 0.0))
+ 
+(('order_modules', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 185), (1, 4.291534423828125e-05, 0.0))
+ 
+(('IncrementalDecoder', '/usr/lib/python2.6/encodings/latin_1.py', 24), (1, 3.4093856811523438e-05, 0.0))
+ 
+(('validate', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper_validator.py', 19), (1, 0.0040161609649658203, 0.0040000000000004476))
+ 
+(('getregentry', '/usr/lib/python2.6/encodings/latin_1.py', 41), (1, 0.00015878677368164062, 0.0))
+ 
+(('p_input_branch', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 444), (1, 0.00034213066101074219, 0.0))
+ 
+(('p_splitter', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 229), (1, 0.00028204917907714844, 0.0))
+ 
+(('p_merger_branches', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 669), (1, 0.00039505958557128906, 0.0040000000000000036))
+ 
+(('__new__', '/usr/lib/python2.6/codecs.py', 77), (1, 6.8187713623046875e-05, 0.0))
+ 
+(('check_field_refs', '/home/melnikovkolya/classes/semester-3-project/flowy/filter_validator.py', 44), (1, 0.00067901611328125, 0.0040000000000000036))
+ 
+(('_init_parsing_state', '/usr/lib/python2.6/optparse.py', 1262), (1, 3.0994415283203125e-05, 0.0040009999999999213))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/ungrouper_validator.py', 10), (1, 3.5059800148010254, 0.78004800000053365))
+ 
+(('parse', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 811), (1, 0.16866111755371094, 0.17201100000000014))
+ 
+(('find_name_to_otput', '/home/melnikovkolya/classes/semester-3-project/flowy/ungrouper_validator.py', 55), (1, 3.1948089599609375e-05, 0.0))
+ 
+(('gettext', '/usr/lib/python2.6/gettext.py', 580), (1, 0.0039150714874267578, 0.0040000000000000036))
+ 
+(('get_start', '/usr/lib/pymodules/python2.6/ply/yacc.py', 2855), (1, 4.7206878662109375e-05, 0.0))
+ 
+(('set_usage', '/usr/lib/python2.6/optparse.py', 1271), (1, 4.100799560546875e-05, 0.0))
+ 
+(('get_tokens', '/usr/lib/pymodules/python2.6/ply/yacc.py', 2889), (1, 6.6995620727539062e-05, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 151), (1, 4.8875808715820312e-05, 0.0))
+ 
+(('p_merger_module', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 663), (1, 0.00040102005004882812, 0.0))
+ 
+(('parse', '/usr/lib/pymodules/python2.6/ply/yacc.py', 257), (1, 0.16637682914733887, 0.16800999999999999))
+ 
+(('p_opt_op_rule_end', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 765), (1, 8.7976455688476562e-05, 0.0))
+ 
+(('bind_callables', '/usr/lib/pymodules/python2.6/ply/yacc.py', 1870), (1, 0.011104822158813477, 0.0080009999999999248))
+ 
+(('get_rules', '/usr/lib/pymodules/python2.6/ply/lex.py', 652), (1, 0.013356924057006836, 0.01200100000000015))
+ 
+(('find_ungrouper_to_merger', '/home/melnikovkolya/classes/semester-3-project/flowy/ungrouper_validator.py', 20), (1, 6.198883056640625e-05, 0.0))
+ 
+(('get_branches_fields', '/home/melnikovkolya/classes/semester-3-project/flowy/groupfilter_validator.py', 41), (1, 3.1948089599609375e-05, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/filter.py', 10), (1, 3.6954879760742188e-05, 0.0))
+ 
+(('p_rule_prefix', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 388), (1, 0.00041985511779785156, 0.0040010000000001433))
+ 
+(('search_function', '/usr/lib/python2.6/encodings/__init__.py', 71), (1, 0.0019559860229492188, 0.0040000000000000036))
+ 
+(('check_duplicate_grouper_names', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper_validator.py', 28), (1, 0.00011610984802246094, 0.0))
+ 
+(('yacc', '/usr/lib/pymodules/python2.6/ply/yacc.py', 3036), (1, 0.077062129974365234, 0.076004999999999878))
+ 
+(('__init__', '/usr/lib/pymodules/python2.6/ply/yacc.py', 1815), (1, 4.1961669921875e-05, 0.0))
+ 
+(('create_pseudobranches', '/home/melnikovkolya/classes/semester-3-project/flowy/filter_validator.py', 62), (1, 8.0108642578125e-05, 0.0))
+ 
+(('get_literals', '/usr/lib/pymodules/python2.6/ply/lex.py', 605), (1, 4.00543212890625e-05, 0.0))
+ 
+(('si', '/home/melnikovkolya/classes/semester-3-project/flowy/allen_index.py', 148), (1, 3.6001205444335938e-05, 0.0))
+ 
+(('signature', '/usr/lib/pymodules/python2.6/ply/yacc.py', 2796), (1, 0.0085060596466064453, 0.012000999999999928))
+ 
+(('p_merger_module1_n', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 654), (1, 0.00029706954956054688, 0.0))
+ 
+(('p_start_branch', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 435), (1, 0.00042104721069335938, 0.0))
+ 
+(('__init__', '/usr/lib/python2.6/optparse.py', 837), (1, 8.106231689453125e-05, 0.0))
+ 
+(('p_merger', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 648), (1, 0.00057721138000488281, 0.0))
+ 
+(('EQ', '/home/melnikovkolya/classes/semester-3-project/flowy/allen_index.py', 161), (1, 3.1948089599609375e-05, 0.0))
+ 
+(('get_all', '/usr/lib/pymodules/python2.6/ply/yacc.py', 2778), (1, 0.014896154403686523, 0.012000999999999928))
+ 
+(('<module>', '/home/melnikovkolya/classes/semester-3-project/flowy/allen_index.py', 1), (1, 0.0024480819702148438, 0.0040009999999996992))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/timeindex.py', 22), (2, 0.00011086463928222656, 0.0))
+ 
+(('__init__', '/usr/lib/python2.6/Queue.py', 22), (2, 0.0018391609191894531, 0.0))
+ 
+(('p_time', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 573), (2, 0.00082492828369140625, 0.0))
+ 
+(('p_module', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 525), (2, 0.00074410438537597656, 0.0))
+ 
+(('create_gr_record_fields_types', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper.py', 73), (2, 0.0001678466796875, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 50), (2, 9.1075897216796875e-05, 0.0))
+ 
+(('_initLoop', '/usr/local/lib/python2.6/dist-packages/tables/vlarray.py', 542), (2, 0.047768115997314453, 0.0))
+ 
+(('p_grouper_rule0', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 534), (2, 0.00021195411682128906, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper.py', 96), (2, 5.1975250244140625e-05, 0.0))
+ 
+(('check_branch_id_ref', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 192), (2, 0.0001239776611328125, 0.0))
+ 
+(('p_opt_aggr_end', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 603), (2, 0.00020813941955566406, 0.0))
+ 
+(('p_module0', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 521), (2, 0.0001888275146484375, 0.0))
+ 
+(('p_grouper', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 504), (2, 0.0028209686279296875, 0.0040000000000000036))
+ 
+(('p_allen_op', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 785), (2, 0.00029993057250976562, 0.0))
+ 
+(('__repr__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 58), (2, 9.7036361694335938e-05, 0.0))
+ 
+(('p_delta_arg', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 566), (2, 0.00029873847961425781, 0.0))
+ 
+(('__iter__', '/usr/local/lib/python2.6/dist-packages/tables/vlarray.py', 516), (2, 0.061742782592773438, 0.0))
+ 
+(('convert_module_aggr_ops', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper_validator.py', 105), (2, 0.014819860458374023, 0.016001999999999406))
+ 
+(('__del__', '/home/melnikovkolya/classes/semester-3-project/flowy/pytables.py', 115), (2, 0.011918067932128906, 0.012000000000000011))
+ 
+(('__getitem__', '/usr/lib/python2.6/UserDict.py', 17), (2, 7.9870223999023438e-05, 0.0))
+ 
+(('p_no_allen_delta', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 781), (2, 0.00017881393432617188, 0.0))
+ 
+(('p_module1_n', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 516), (2, 0.00076985359191894531, 0.0))
+ 
+(('get_input_fields_types', '/home/melnikovkolya/classes/semester-3-project/flowy/validator_common.py', 52), (2, 0.00232696533203125, 0.0))
+ 
+(('p_filter', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 240), (2, 0.00073194503784179688, 0.0))
+ 
+(('create_grouper_rules_impl', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper_validator.py', 75), (2, 0.034547090530395508, 0.036001999999999423))
+ 
+(('_init', '/usr/lib/python2.6/Queue.py', 197), (2, 8.0108642578125e-05, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper.py', 9), (2, 0.0010058879852294922, 0.0))
+ 
+(('p_allen_rule', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 769), (2, 0.0012629032135009766, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/merger.py', 49), (2, 0.00036001205444335938, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 138), (2, 8.869171142578125e-05, 0.0))
+ 
+(('t_string', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 101), (2, 0.00020503997802734375, 0.0))
+ 
+(('create_gr_record_fields_list', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper.py', 63), (2, 0.00015211105346679688, 0.0))
+ 
+(('convert_module_rules', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper_validator.py', 141), (2, 0.0013997554779052734, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/groupfilter.py', 5), (2, 0.00083112716674804688, 0.0))
+ 
+(('p_aggr1_n', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 593), (2, 0.00061702728271484375, 0.0))
+ 
+(('get_rule_impl', '/home/melnikovkolya/classes/semester-3-project/flowy/groupfilter_validator.py', 61), (2, 0.00050306320190429688, 0.0))
+ 
+(('replace_nested_rules', '/home/melnikovkolya/classes/semester-3-project/flowy/filter_validator.py', 136), (2, 0.00048112869262695312, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/splitter.py', 32), (2, 0.0020008087158203125, 0.0))
+ 
+(('t_hex', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 145), (2, 0.00022983551025390625, 0.0))
+ 
+(('p_grouper_rule_rel_delta', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 550), (2, 0.0012071132659912109, 0.0))
+ 
+(('_expand_lang', '/usr/lib/python2.6/gettext.py', 130), (2, 0.00095987319946289062, 0.0040000000000000036))
+ 
+(('check_duplicate_module_names', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper_validator.py', 40), (2, 0.00018310546875, 0.0))
+ 
+(('p_aggregate', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 586), (2, 0.00080180168151855469, 0.0))
+ 
+(('go', '/home/melnikovkolya/classes/semester-3-project/flowy/groupfilter.py', 13), (2, 20632.220237016678, 21338.749588999999))
+ 
+(('p_split_branch', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 457), (2, 0.0015261173248291016, 0.0))
+ 
+(('normalize_encoding', '/usr/lib/python2.6/encodings/__init__.py', 49), (2, 0.00016188621520996094, 0.0))
+ 
+(('normalize', '/usr/lib/python2.6/locale.py', 316), (2, 0.00043177604675292969, 0.0))
+ 
+(('__iter__', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 1473), (3, 0.43885898590087891, 0.0080010000019683503))
+ 
+(('p_filter_rule_1n', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 274), (3, 0.00074124336242675781, 0.0))
+ 
+(('<genexpr>', '/home/melnikovkolya/classes/semester-3-project/flowy/filter_validator.py', 57), (3, 9.7751617431640625e-05, 0.0))
+ 
+(('p_term_opt_rule', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 345), (3, 0.00038623809814453125, 0.0040000000000000036))
+ 
+(('p_or_optrule', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 330), (3, 0.00062799453735351562, 0.0))
+ 
+(('<genexpr>', '/home/melnikovkolya/classes/semester-3-project/flowy/filter_validator.py', 14), (3, 8.9406967163085938e-05, 0.0))
+ 
+(('check_qid_field_ref', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 206), (3, 0.0002079010009765625, 0.0))
+ 
+(('<genexpr>', '/home/melnikovkolya/classes/semester-3-project/flowy/filter_validator.py', 55), (3, 0.00010633468627929688, 0.0))
+ 
+(('flush', '/home/melnikovkolya/classes/semester-3-project/flowy/pytables.py', 81), (3, 2.4475281238555908, 0.32802200000514858))
+ 
+(('get_input_reader', '/home/melnikovkolya/classes/semester-3-project/flowy/validator_common.py', 48), (3, 0.54138565063476562, 0.46803000000000017))
+ 
+(('p_infix_rule', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 367), (3, 0.0013358592987060547, 0.0))
+ 
+(('<genexpr>', '/home/melnikovkolya/classes/semester-3-project/flowy/groupfilter_validator.py', 102), (3, 0.00010514259338378906, 0.0))
+ 
+(('p_filter_rule_0', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 279), (3, 0.00025320053100585938, 0.0))
+ 
+(('p_filter_rule', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 283), (3, 0.00044512748718261719, 0.0))
+ 
+(('t_LT', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 74), (3, 9.0837478637695312e-05, 0.0))
+ 
+(('p_rule_or_not', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 349), (3, 0.00063610076904296875, 0.0))
+ 
+(('p_rule', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 360), (3, 0.00040578842163085938, 0.0))
+ 
+(('iterate_module_allen_op_groups', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 76), (3, 9.6797943115234375e-05, 0.0))
+ 
+(('p_merger_infix_rule', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 712), (3, 0.0015790462493896484, 0.0))
+ 
+(('p_merger_rule', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 697), (3, 0.00050592422485351562, 0.0))
+ 
+(('flush', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 1951), (3, 2.390861988067627, 0.32802200000514858))
+ 
+(('p_end_branch', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 482), (3, 0.00078797340393066406, 0.0))
+ 
+(('<genexpr>', '/home/melnikovkolya/classes/semester-3-project/flowy/merger.py', 62), (3, 0.0001010894775390625, 0.0))
+ 
+(('__hash__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 94), (4, 0.00078701972961425781, 0.0))
+ 
+(('_g_preKillHook', '/usr/local/lib/python2.6/dist-packages/tables/node.py', 354), (4, 9.8943710327148438e-05, 0.0))
+ 
+(('__contains__', '/usr/lib/python2.6/UserDict.py', 69), (4, 0.00011372566223144531, 0.0))
+ 
+(('<lambda>', 'flowy.py', 17), (4, 0.00011277198791503906, 0.0))
+ 
+(('p_simple_agg_same_name', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 617), (4, 0.0017957687377929688, 0.0080000000000000071))
+ 
+(('get_rule_impl', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 346), (4, 0.0010442733764648438, 0.0))
+ 
+(('get', '/usr/lib/python2.6/UserDict.py', 57), (4, 0.00040292739868164062, 0.0))
+ 
+(('__cmp__', '/usr/local/lib/python2.6/dist-packages/tables/misc/lrucache.py', 108), (4, 0.00013422966003417969, 0.0))
+ 
+(('isdigit', '/usr/lib/python2.6/sre_parse.py', 219), (4, 0.00011396408081054688, 0.0))
+ 
+(('__repr__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 106), (4, 0.00013685226440429688, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/merger.py', 17), (4, 0.00012159347534179688, 0.0))
+ 
+(('get_rule_needed_branches', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 296), (4, 0.00063681602478027344, 0.0))
+ 
+(('t_int', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 150), (4, 0.00040483474731445312, 0.0))
+ 
+(('p_mid_branch_terminate', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 476), (4, 0.00052571296691894531, 0.0))
+ 
+(('__str__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 88), (4, 0.00048184394836425781, 0.0))
+ 
+(('p_grouper_rule', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 538), (4, 0.0019702911376953125, 0.0))
+ 
+(('p_merger_rule1_n', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 688), (4, 0.0011007785797119141, 0.0))
+ 
+(('start', '/usr/lib/python2.6/threading.py', 461), (5, 3.6452641487121582, 0.93205800000214367))
+ 
+(('Event', '/usr/lib/python2.6/threading.py', 357), (5, 0.076456308364868164, 0.0040000000008149073))
+ 
+(('_set_attrs', '/usr/lib/python2.6/optparse.py', 609), (5, 0.00063014030456542969, 0.0))
+ 
+(('__init__', '/usr/lib/python2.6/threading.py', 364), (5, 0.065616846084594727, 0.0040000000008149073))
+ 
+(('_check_opt_strings', '/usr/lib/python2.6/optparse.py', 579), (5, 0.00018310546875, 0.0))
+ 
+(('_check_nargs', '/usr/lib/python2.6/optparse.py', 699), (5, 0.000148773193359375, 0.0))
+ 
+(('run', '/usr/lib/python2.6/threading.py', 474), (5, 21799.923771858215, 22542.164796999998))
+ 
+(('join', '/usr/lib/python2.6/threading.py', 622), (5, 10595.639101982117, 10780.325727000003))
+ 
+(('__init__', '/usr/lib/python2.6/threading.py', 424), (5, 0.1553959846496582, 0.0040000000008149073))
+ 
+(('_check_type', '/usr/lib/python2.6/optparse.py', 635), (5, 0.00016474723815917969, 0.0))
+ 
+(('__init__', '/usr/lib/python2.6/optparse.py', 560), (5, 0.0038492679595947266, 0.0))
+ 
+(('_set_opt_strings', '/usr/lib/python2.6/optparse.py', 588), (5, 0.00031185150146484375, 0.0))
+ 
+(('get_merger_branches_order', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 229), (5, 0.00030994415283203125, 0.0))
+ 
+(('_check_const', '/usr/lib/python2.6/optparse.py', 693), (5, 0.00014805793762207031, 0.0))
+ 
+(('_check_conflict', '/usr/lib/python2.6/optparse.py', 980), (5, 0.00019383430480957031, 0.0))
+ 
+(('_check_choice', '/usr/lib/python2.6/optparse.py', 665), (5, 0.00015211105346679688, 0.0))
+ 
+(('wait', '/usr/lib/python2.6/threading.py', 389), (5, 1.4045898914337158, 0.92805800000132876))
+ 
+(('add_option', '/usr/lib/python2.6/optparse.py', 1007), (5, 0.0047156810760498047, 0.0))
+ 
+(('_set_daemon', '/usr/lib/python2.6/threading.py', 444), (5, 0.019243001937866211, 0.0))
+ 
+(('_newname', '/usr/lib/python2.6/threading.py', 399), (5, 0.013895273208618164, 0.0))
+ 
+(('__stop', '/usr/lib/python2.6/threading.py', 581), (5, 0.0017960071563720703, 0.0))
+ 
+(('isbasestring', '/usr/lib/python2.6/optparse.py', 832), (5, 0.00019145011901855469, 0.0))
+ 
+(('daemon', '/usr/lib/python2.6/threading.py', 676), (5, 0.00013899803161621094, 0.0))
+ 
+(('_check_dest', '/usr/lib/python2.6/optparse.py', 678), (5, 0.00020813941955566406, 0.0))
+ 
+(('_check_action', '/usr/lib/python2.6/optparse.py', 629), (5, 0.00015115737915039062, 0.0))
+ 
+(('_check_callback', '/usr/lib/python2.6/optparse.py', 708), (5, 0.00014495849609375, 0.0))
+ 
+(('__bootstrap', '/usr/lib/python2.6/threading.py', 483), (5, 73152.289892196655, 73724.271475999994))
+ 
+(('__bootstrap_inner', '/usr/lib/python2.6/threading.py', 506), (5, 73152.289488077164, 73724.267475000001))
+ 
+(('_calc_chunkshape', '/usr/local/lib/python2.6/dist-packages/tables/leaf.py', 352), (6, 0.0176849365234375, 0.0040000000008149073))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 120), (6, 0.00021100044250488281, 0.0))
+ 
+(('replace_bound_rules', '/home/melnikovkolya/classes/semester-3-project/flowy/validator_common.py', 66), (6, 0.0030739307403564453, 0.0040000000000000036))
+ 
+(('p_op', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 374), (6, 0.0013499259948730469, 0.0))
+ 
+(('createTable', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 625), (6, 0.35201072692871094, 0.24001599999974133))
+ 
+(('_getmaindim', '/usr/local/lib/python2.6/dist-packages/tables/leaf.py', 218), (6, 0.00025892257690429688, 0.0))
+ 
+(('_g_preKillHook', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 2429), (6, 0.00019288063049316406, 0.0))
+ 
+(('isdir', '/usr/lib/python2.6/genericpath.py', 38), (6, 0.00091314315795898438, 0.004001000001153443))
+ 
+(('p_qid_arg', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 738), (6, 0.0026998519897460938, 0.0))
+ 
+(('row', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 295), (6, 0.032982349395751953, 0.0))
+ 
+(('check_is_shortcut', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper.py', 118), (6, 0.00016331672668457031, 0.0))
+ 
+(('_g_create', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 730), (6, 0.22419285774230957, 0.17201199999908567))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper.py', 108), (6, 0.00050306320190429688, 0.0))
+ 
+(('replace_with_vals', '/home/melnikovkolya/classes/semester-3-project/flowy/validator_common.py', 106), (6, 0.0029850006103515625, 0.0))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/filters.py', 212), (6, 0.0076298713684082031, 0.0))
+ 
+(('create_table_file', '/home/melnikovkolya/classes/semester-3-project/flowy/pytables.py', 237), (6, 0.75770020484924316, 0.46802799999932176))
+ 
+(('dirname', '/usr/lib/python2.6/posixpath.py', 117), (6, 0.0095231533050537109, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/filter.py', 108), (6, 0.00019216537475585938, 0.0))
+ 
+(('p_grouper_op', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 557), (6, 0.00089693069458007812, 0.0040000000000000036))
+ 
+(('p_grouper_rule1_n', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 529), (6, 0.0016539096832275391, 0.0))
+ 
+(('S_ISDIR', '/usr/lib/python2.6/stat.py', 40), (6, 0.00046300888061523438, 0.004001000001153443))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 110), (6, 0.0001811981201171875, 0.0))
+ 
+(('if_exists_delete', '/home/melnikovkolya/classes/semester-3-project/flowy/validator_common.py', 11), (6, 0.096372842788696289, 0.0))
+ 
+(('p_qid', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 622), (6, 0.001857757568359375, 0.0))
+ 
+(('_g_addChildrenNames', '/usr/local/lib/python2.6/dist-packages/tables/group.py', 376), (6, 0.010331392288208008, 0.0040000000008149073))
+ 
+(('<module>', '<string>', 1), (7, 0.012396812438964844, 0.012000000000000011))
+ 
+(('<lambda>', '/usr/local/lib/python2.6/dist-packages/tables/group.py', 892), (7, 0.00074839591979980469, 0.0080000000016298145))
+ 
+(('createVLArray', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 837), (8, 0.043541193008422852, 0.040002000001550186))
+ 
+(('p_arg', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 411), (8, 0.0022470951080322266, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 174), (8, 0.00025129318237304688, 0.0))
+ 
+(('_calc_chunkshape', '/usr/local/lib/python2.6/dist-packages/tables/vlarray.py', 303), (8, 0.0019943714141845703, 0.0))
+ 
+(('_g_create', '/usr/local/lib/python2.6/dist-packages/tables/vlarray.py', 324), (8, 0.024519920349121094, 0.020000000000436557))
+ 
+(('_setflavor', '/usr/local/lib/python2.6/dist-packages/tables/leaf.py', 233), (8, 0.032287120819091797, 0.028001999995467486))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/record.py', 125), (8, 0.24568963050842285, 0.0040000000008149073))
+ 
+(('check_flavor', '/usr/local/lib/python2.6/dist-packages/tables/flavor.py', 101), (8, 0.00023317337036132812, 0.0))
+ 
+(('p_aggr', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 607), (8, 0.0041449069976806641, 0.0080009999999999248))
+ 
+(('p_aggr_op', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 635), (8, 0.0012972354888916016, 0.0))
+ 
+(('copy', '/usr/local/lib/python2.6/dist-packages/tables/atom.py', 544), (8, 0.010071754455566406, 0.0080000000016298145))
+ 
+(('join', '/usr/lib/python2.6/posixpath.py', 59), (8, 0.00067973136901855469, 0.0))
+ 
+(('__del__', '/usr/local/lib/python2.6/dist-packages/tables/group.py', 297), (9, 0.0087170600891113281, 0.0))
+ 
+(('_g_closeDescendents', '/usr/local/lib/python2.6/dist-packages/tables/group.py', 857), (9, 0.21888160705566406, 0.039999999997235136))
+ 
+(('_g_close', '/usr/local/lib/python2.6/dist-packages/tables/group.py', 911), (9, 0.0067708492279052734, 0.0080000000016298145))
+ 
+(('_g_close', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 2754), (9, 0.051886081695556641, 0.011999999998806743))
+ 
+(('__len__', '/usr/local/lib/python2.6/dist-packages/tables/misc/lrucache.py', 138), (9, 0.00029063224792480469, 0.0))
+ 
+(('_f_close', '/usr/local/lib/python2.6/dist-packages/tables/group.py', 921), (9, 0.24245715141296387, 0.052000999996380415))
+ 
+(('t_EQ', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 79), (9, 0.00025415420532226562, 0.0))
+ 
+(('close', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 1972), (9, 0.38457894325256348, 0.056000999993557343))
+ 
+(('p_mid_branch', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 467), (9, 0.0031220912933349609, 0.0080009999999999248))
+ 
+(('_f_close', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 2464), (9, 0.17920565605163574, 0.027999999994790414))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/misc/lrucache.py', 102), (10, 0.00034022331237792969, 0.0))
+ 
+(('__setitem__', '/usr/local/lib/python2.6/dist-packages/tables/misc/lrucache.py', 144), (10, 0.050474882125854492, 0.0))
+ 
+(('_g_postReviveHook', '/usr/local/lib/python2.6/dist-packages/tables/node.py', 359), (10, 0.00025463104248046875, 0.0))
+ 
+(('currentThread', '/usr/lib/python2.6/threading.py', 801), (10, 0.00030732154846191406, 0.0))
+ 
+(('_killNode', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 2101), (10, 0.052376985549926758, 0.0))
+ 
+(('isSet', '/usr/lib/python2.6/threading.py', 369), (10, 0.00030684471130371094, 0.0))
+ 
+(('pop', '/usr/local/lib/python2.6/dist-packages/tables/misc/lrucache.py', 192), (10, 0.00054502487182617188, 0.0))
+ 
+(('_reviveNode', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 2127), (10, 0.0037400722503662109, 0.0040000000008149073))
+ 
+(('p_opt_aggr', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 598), (10, 0.0032141208648681641, 0.0040000000000000036))
+ 
+(('__getseqn', '/usr/local/lib/python2.6/dist-packages/tables/misc/lrucache.py', 115), (10, 0.00094175338745117188, 0.0))
+ 
+(('<lambda>', '/usr/local/lib/python2.6/dist-packages/tables/group.py', 904), (10, 0.0042827129364013672, 0.0040000000008149073))
+ 
+(('get_record_class', '/home/melnikovkolya/classes/semester-3-project/flowy/record.py', 6), (11, 0.2394108772277832, 0.0040000000008149073))
+ 
+(('t_GT', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 84), (11, 0.0003261566162109375, 0.0))
+ 
+(('Record', '/home/melnikovkolya/classes/semester-3-project/flowy/record.py', 50), (11, 0.0004711151123046875, 0.0))
+ 
+(('p_arrow', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 493), (11, 0.00031614303588867188, 0.0))
+ 
+(('<lambda>', '/usr/lib/python2.6/hashlib.py', 109), (11, 0.00038290023803710938, 0.0))
+ 
+(('p_pipeline_stage', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 215), (12, 0.0017573833465576172, 0.0))
+ 
+(('__contains__', '/usr/local/lib/python2.6/dist-packages/tables/attributeset.py', 545), (12, 0.00031352043151855469, 0.0))
+ 
+(('_g_getparent', '/usr/local/lib/python2.6/dist-packages/tables/node.py', 211), (12, 0.0019068717956542969, 0.0))
+ 
+(('<lambda>', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 304), (12, 0.00034046173095703125, 0.0))
+ 
+(('<genexpr>', '/usr/local/lib/python2.6/dist-packages/tables/leaf.py', 390), (12, 0.00038623809814453125, 0.0))
+ 
+(('p_pipeline_stage_1n', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 202), (12, 0.0019559860229492188, 0.0040000000000000036))
+ 
+(('check_rule_fields', '/home/melnikovkolya/classes/semester-3-project/flowy/validator_common.py', 56), (12, 0.0004558563232421875, 0.0))
+ 
+(('<genexpr>', '/home/melnikovkolya/classes/semester-3-project/flowy/merger_validator.py', 260), (12, 0.00038480758666992188, 0.0))
+ 
+(('p_id_or_qid', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 628), (12, 0.0019271373748779297, 0.0))
+ 
+(('flush', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 2408), (12, 1.6777589321136475, 0.3200200000028417))
+ 
+(('_g_open', '/usr/local/lib/python2.6/dist-packages/tables/vlarray.py', 369), (12, 0.0656280517578125, 0.024000999997952022))
+ 
+(('__repr__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 71), (13, 0.00061392784118652344, 0.0))
+ 
+(('_g_checkName', '/usr/local/lib/python2.6/dist-packages/tables/node.py', 905), (14, 0.00046086311340332031, 0.0))
+ 
+(('_saveBufferedRows', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 1823), (14, 1.1933684349060059, 0.32402199999341974))
+ 
+(('_class_escape', '/usr/lib/python2.6/sre_parse.py', 231), (14, 0.00063347816467285156, 0.0))
+ 
+(('_getOrCreatePath', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 568), (14, 0.0032899379730224609, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/pytables.py', 86), (14, 2.8468761444091797, 1.1680750000050466))
+ 
+(('csformula', '/usr/local/lib/python2.6/dist-packages/tables/leaf.py', 51), (14, 0.000576019287109375, 0.0))
+ 
+(('_g_open', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 788), (14, 1.5102775096893311, 0.8320540000058827))
+ 
+(('_f_list', '/usr/local/lib/python2.6/dist-packages/tables/attributeset.py', 275), (14, 0.000469207763671875, 0.0040000000008149073))
+ 
+(('calc_chunksize', '/usr/local/lib/python2.6/dist-packages/tables/leaf.py', 69), (14, 0.014083623886108398, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/pytables.py', 49), (14, 2.8359520435333252, 1.1680750000050466))
+ 
+(('limit_es', '/usr/local/lib/python2.6/dist-packages/tables/leaf.py', 60), (14, 0.00038599967956542969, 0.0))
+ 
+(('__contains__', '/usr/local/lib/python2.6/dist-packages/tables/group.py', 442), (14, 0.0029871463775634766, 0.0))
+ 
+(('_indexNameOf', '/usr/local/lib/python2.6/dist-packages/tables/_table_common.py', 13), (14, 0.00043606758117675781, 0.0))
+ 
+(('isVisibleName', '/usr/local/lib/python2.6/dist-packages/tables/path.py', 170), (14, 0.00056886672973632812, 0.0040000000008149073))
+ 
+(('_g_refNode', '/usr/local/lib/python2.6/dist-packages/tables/group.py', 514), (14, 0.020660638809204102, 0.012000000002444722))
+ 
+(('alltrue', '/usr/lib/python2.6/dist-packages/numpy/core/fromnumeric.py', 1289), (14, 0.042331218719482422, 0.0040000000008149073))
+ 
+(('_indexPathnameOf', '/usr/local/lib/python2.6/dist-packages/tables/_table_common.py', 16), (14, 0.010383844375610352, 0.004001000001153443))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 65), (15, 0.00060582160949707031, 0.0040009999999999213))
+ 
+(('flush', '/usr/local/lib/python2.6/dist-packages/tables/leaf.py', 692), (16, 1.0141937732696533, 0.024003000002267072))
+ 
+(('tell', '/usr/lib/python2.6/sre_parse.py', 211), (16, 0.00046443939208984375, 0.0))
+ 
+(('_slotnames', '/usr/lib/python2.6/copy_reg.py', 95), (16, 0.0020489692687988281, 0.0080000000000000071))
+ 
+(('__init__', '/usr/lib/python2.6/threading.py', 179), (16, 0.063062906265258789, 0.0))
+ 
+(('Condition', '/usr/lib/python2.6/threading.py', 174), (16, 0.064303398132324219, 0.0))
+ 
+(('_mk_bitmap', '/usr/lib/python2.6/sre_compile.py', 264), (16, 0.0048615932464599609, 0.0040000000000000036))
+ 
+(('_f_close', '/usr/local/lib/python2.6/dist-packages/tables/leaf.py', 704), (17, 0.091074943542480469, 0.0080000000016298145))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper.py', 86), (18, 0.00052547454833984375, 0.0))
+ 
+(('_statetoken', '/usr/lib/pymodules/python2.6/ply/lex.py', 521), (19, 0.0021924972534179688, 0.0))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/group.py', 1103), (20, 0.027700662612915039, 0.024000000004889444))
+ 
+(('__init__', '/usr/lib/python2.6/sre_parse.py', 73), (20, 0.00057554244995117188, 0.0))
+ 
+(('expanduser', '/usr/lib/python2.6/posixpath.py', 245), (20, 0.00081634521484375, 0.0))
+ 
+(('_g_setPathNames', '/usr/local/lib/python2.6/dist-packages/tables/description.py', 521), (20, 0.034388065338134766, 0.024001999994652579))
+ 
+(('_g_postInitHook', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 581), (20, 0.074328899383544922, 0.060003999999025837))
+ 
+(('_compile', '/usr/lib/python2.6/re.py', 229), (20, 0.42908382415771484, 0.42002599999999979))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 2576), (20, 0.016957759857177734, 0.011999999998806743))
+ 
+(('correct_byteorder', '/usr/local/lib/python2.6/dist-packages/tables/utils.py', 35), (20, 0.00051355361938476562, 0.0))
+ 
+(('_g_postInitHook', '/usr/local/lib/python2.6/dist-packages/tables/vlarray.py', 297), (20, 0.00396728515625, 0.012000999999145279))
+ 
+(('__init__', '/usr/lib/python2.6/sre_parse.py', 184), (20, 0.0021224021911621094, 0.0))
+ 
+(('_checkfilters', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 136), (20, 0.00059771537780761719, 0.0))
+ 
+(('_v_wdflts', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 318), (20, 0.015527009963989258, 0.0))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 379), (20, 1.9717285633087158, 1.1520739999978105))
+ 
+(('_calc_nrowsinbuf', '/usr/local/lib/python2.6/dist-packages/tables/leaf.py', 393), (20, 0.13779807090759277, 0.0040000000008149073))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/description.py', 380), (20, 0.26455187797546387, 0.1840109999939159))
+ 
+(('parse', '/usr/lib/python2.6/sre_parse.py', 669), (20, 0.2817232608795166, 0.25601699999999994))
+ 
+(('_g_setNestedNamesDescr', '/usr/local/lib/python2.6/dist-packages/tables/description.py', 502), (20, 0.0041193962097167969, 0.0))
+ 
+(('_cacheDescriptionData', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 849), (20, 0.11352849006652832, 0.10801000000719796))
+ 
+(('_compile_info', '/usr/lib/python2.6/sre_compile.py', 367), (20, 0.032503366470336914, 0.044001999999999875))
+ 
+(('getColsInOrder', '/usr/local/lib/python2.6/dist-packages/tables/description.py', 529), (20, 0.00079584121704101562, 0.0))
+ 
+(('_g_postInitHook', '/usr/local/lib/python2.6/dist-packages/tables/group.py', 267), (20, 0.40326571464538574, 0.10000800000125309))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/misc/lrucache.py', 123), (20, 0.0061318874359130859, 0.0080009999983303715))
+ 
+(('_getEnumMap', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 720), (20, 0.026581048965454102, 0.0080010000019683503))
+ 
+(('compile', '/usr/lib/python2.6/re.py', 188), (20, 0.43025588989257812, 0.42002599999999979))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/utils.py', 316), (20, 0.00078845024108886719, 0.0))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 237), (20, 0.00099825859069824219, 0.0039999999971769284))
+ 
+(('openFile', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 168), (20, 1.0345497131347656, 0.21601500000542728))
+ 
+(('__getRootGroup', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 538), (20, 0.040925502777099609, 0.028001000002404908))
+ 
+(('compile', '/usr/lib/python2.6/sre_compile.py', 501), (20, 0.42527437210083008, 0.41202399999999995))
+ 
+(('expandvars', '/usr/lib/python2.6/posixpath.py', 276), (20, 0.0098223686218261719, 0.0))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/vlarray.py', 191), (20, 0.12205791473388672, 0.084005000000615837))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 467), (20, 1.0327165126800537, 0.21601500000542728))
+ 
+(('_code', '/usr/lib/python2.6/sre_compile.py', 486), (20, 0.13938212394714355, 0.14800499999999994))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/misc/proxydict.py', 20), (24, 0.00069141387939453125, 0.0))
+ 
+(('__del__', '/usr/local/lib/python2.6/dist-packages/tables/node.py', 319), (25, 0.053544521331787109, 0.0080000000016298145))
+ 
+(('_g_close', '/usr/local/lib/python2.6/dist-packages/tables/attributeset.py', 617), (26, 0.0006389617919921875, 0.0))
+ 
+(('_wrapit', '/usr/lib/python2.6/dist-packages/numpy/core/fromnumeric.py', 32), (26, 0.077532291412353516, 0.0080000000016298145))
+ 
+(('asarray', '/usr/lib/python2.6/dist-packages/numpy/core/numeric.py', 180), (26, 0.025931119918823242, 0.0040000000008149073))
+ 
+(('_g_getChildLeafClass', '/usr/local/lib/python2.6/dist-packages/tables/group.py', 338), (26, 0.010759830474853516, 0.0))
+ 
+(('_f_close', '/usr/local/lib/python2.6/dist-packages/tables/node.py', 506), (26, 0.064695119857788086, 0.011999999998806743))
+ 
+(('__init__', '/usr/lib/python2.6/threading.py', 59), (26, 0.00082802772521972656, 0.0))
+ 
+(('_g_delLocation', '/usr/local/lib/python2.6/dist-packages/tables/node.py', 468), (26, 0.028501033782958984, 0.0040000000008149073))
+ 
+(('prod', '/usr/lib/python2.6/dist-packages/numpy/core/fromnumeric.py', 1679), (26, 0.11123895645141602, 0.0080000000016298145))
+ 
+(('__setitem__', '/usr/local/lib/python2.6/dist-packages/tables/misc/proxydict.py', 33), (28, 0.00091433525085449219, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 77), (28, 0.00099396705627441406, 0.0040010000000001433))
+ 
+(('S_ISREG', '/usr/lib/python2.6/stat.py', 49), (28, 0.0023477077484130859, 0.0040000000008149073))
+ 
+(('__iter__', '/usr/local/lib/python2.6/dist-packages/tables/misc/lrucache.py', 202), (28, 0.012085437774658203, 0.0))
+ 
+(('isfile', '/usr/lib/python2.6/genericpath.py', 26), (28, 0.012959957122802734, 0.0040000000008149073))
+ 
+(('__contains__', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 1300), (28, 0.049411773681640625, 0.028001999995467486))
+ 
+(('_escape', '/usr/lib/python2.6/sre_parse.py', 263), (31, 0.0017206668853759766, 0.0))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/atom.py', 604), (32, 0.017023563385009766, 0.032003000000258908))
+ 
+(('__setattr__', '/usr/local/lib/python2.6/dist-packages/tables/attributeset.py', 411), (32, 0.11370277404785156, 0.064002999999502208))
+ 
+(('<lambda>', '/usr/local/lib/python2.6/dist-packages/tables/atom.py', 599), (32, 0.00083613395690917969, 0.0))
+ 
+(('isname', '/usr/lib/python2.6/sre_parse.py', 222), (34, 0.012839794158935547, 0.012001999999999846))
+ 
+(('S_IFMT', '/usr/lib/python2.6/stat.py', 24), (34, 0.00092267990112304688, 0.0))
+ 
+(('create_aggr_impl_init_args', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper_validator.py', 123), (36, 0.028400659561157227, 0.036001999999999423))
+ 
+(('closeNodes', '/usr/local/lib/python2.6/dist-packages/tables/group.py', 862), (36, 0.19506335258483887, 0.039999999997235136))
+ 
+(('_unrefNode', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 2088), (36, 0.011468887329101562, 0.0))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/atom.py', 119), (38, 0.019418239593505859, 0.024000999999999717))
+ 
+(('_g_postInitHook', '/usr/local/lib/python2.6/dist-packages/tables/node.py', 490), (40, 0.0010602474212646484, 0.0))
+ 
+(('_getTypeColNames', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 712), (40, 0.043287038803100586, 0.040003000001888722))
+ 
+(('_g_postInitHook', '/usr/local/lib/python2.6/dist-packages/tables/leaf.py', 330), (40, 0.0068311691284179688, 0.0039999999971769284))
+ 
+(('_g_setLocation', '/usr/local/lib/python2.6/dist-packages/tables/node.py', 386), (40, 0.028193235397338867, 0.024002999998629093))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/node.py', 250), (40, 2.0035805702209473, 1.1840770000017073))
+ 
+(('isstring', '/usr/lib/python2.6/sre_compile.py', 480), (40, 0.0014374256134033203, 0.0))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/leaf.py', 259), (40, 2.0063085556030273, 1.1840770000017073))
+ 
+(('_g_checkGroup', '/usr/local/lib/python2.6/dist-packages/tables/node.py', 873), (40, 0.0016260147094726562, 0.0))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/statement.py', 104), (43, 0.0013353824615478516, 0.0))
+ 
+(('t_newline', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 161), (43, 0.0016865730285644531, 0.0))
+ 
+(('closegroup', '/usr/lib/python2.6/sre_parse.py', 89), (44, 0.0015876293182373047, 0.0))
+ 
+(('opengroup', '/usr/lib/python2.6/sre_parse.py', 78), (44, 0.0021440982818603516, 0.0))
+ 
+(('iterate_subrules', '/home/melnikovkolya/classes/semester-3-project/flowy/validator_common.py', 15), (46, 0.0019969940185546875, 0.0))
+ 
+(('isUndoEnabled', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 1432), (46, 0.0038013458251953125, 0.0080009999983303715))
+ 
+(('<lambda>', '/usr/lib/pymodules/python2.6/ply/lex.py', 709), (47, 0.0077641010284423828, 0.0040010000000001433))
+ 
+(('checkFileAccess', '/usr/local/lib/python2.6/dist-packages/tables/utils.py', 130), (48, 0.10146737098693848, 0.016000999999960186))
+ 
+(('__setitem__', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 256), (50, 0.0097527503967285156, 0.0040000000008149073))
+ 
+(('<genexpr>', '/home/melnikovkolya/classes/semester-3-project/flowy/validator_common.py', 53), (50, 0.0011332035064697266, 0.0))
+ 
+(('__setitem__', '/usr/lib/python2.6/sre_parse.py', 140), (52, 0.0015087127685546875, 0.0))
+ 
+(('_simple', '/usr/lib/python2.6/sre_compile.py', 360), (52, 0.0086431503295898438, 0.0080000000000000071))
+ 
+(('splitPath', '/usr/local/lib/python2.6/dist-packages/tables/path.py', 147), (52, 0.0021691322326660156, 0.004001000001153443))
+ 
+(('<lambda>', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 308), (52, 0.0015707015991210938, 0.0))
+ 
+(('split_type', '/usr/local/lib/python2.6/dist-packages/tables/atom.py', 72), (53, 0.0048263072967529297, 0.0))
+ 
+(('from_type', '/usr/local/lib/python2.6/dist-packages/tables/atom.py', 414), (53, 0.050877571105957031, 0.052004000001034001))
+ 
+(('exists', '/usr/lib/python2.6/genericpath.py', 15), (54, 0.088840723037719727, 0.0))
+ 
+(('find_op', '/home/melnikovkolya/classes/semester-3-project/flowy/validator_common.py', 35), (54, 0.0060968399047851562, 0.0080009999999997028))
+ 
+(('_g_loadChild', '/usr/local/lib/python2.6/dist-packages/tables/group.py', 1146), (54, 1.7912564277648926, 0.98006199999508681))
+ 
+(('iterate_rules', '/home/melnikovkolya/classes/semester-3-project/flowy/validator_common.py', 26), (55, 0.0049200057983398438, 0.0040000000000000036))
+ 
+(('<genexpr>', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 601), (59, 0.0014562606811523438, 0.0))
+ 
+(('_compile_charset', '/usr/lib/python2.6/sre_compile.py', 184), (59, 0.038069248199462891, 0.032000999999999946))
+ 
+(('_optimize_charset', '/usr/lib/python2.6/sre_compile.py', 213), (59, 0.027762889862060547, 0.028000999999999943))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/attributeset.py', 213), (60, 0.63532543182373047, 0.29602099999829079))
+ 
+(('_v_attrs', '/usr/local/lib/python2.6/dist-packages/tables/node.py', 221), (60, 0.64392971992492676, 0.30402099999264465))
+ 
+(('__contains__', '/usr/local/lib/python2.6/dist-packages/tables/misc/lrucache.py', 141), (64, 0.0020375251770019531, 0.0))
+ 
+(('lineno', '/usr/lib/pymodules/python2.6/ply/yacc.py', 210), (65, 0.0025455951690673828, 0.0040000000000000036))
+ 
+(('_parse_sub', '/usr/lib/python2.6/sre_parse.py', 307), (66, 0.48796296119689941, 0.46803300000000037))
+ 
+(('_reduce_ex', '/usr/lib/python2.6/copy_reg.py', 59), (67, 0.01495361328125, 0.012000999999145279))
+ 
+(('getNode', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 905), (68, 1.809065580368042, 1.0040639999933774))
+ 
+(('_refNode', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 2073), (70, 0.013490438461303711, 0.0040000000008149073))
+ 
+(('_parse', '/usr/lib/python2.6/sre_parse.py', 385), (84, 0.46760940551757812, 0.45203300000000035))
+ 
+(('from_dtype', '/usr/local/lib/python2.6/dist-packages/tables/atom.py', 384), (85, 0.091119289398193359, 0.088008000002446352))
+ 
+(('__setattr__', '/usr/local/lib/python2.6/dist-packages/tables/misc/lrucache.py', 209), (90, 0.0032684803009033203, 0.0080009999983303715))
+ 
+(('checkNameValidity', '/usr/local/lib/python2.6/dist-packages/tables/path.py', 71), (99, 0.035396814346313477, 0.0039999999971769284))
+ 
+(('close', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 3200), (101, 0.011583328247070312, 0.0))
+ 
+(('_g__setattr', '/usr/local/lib/python2.6/dist-packages/tables/attributeset.py', 358), (109, 0.23629546165466309, 0.1600109999999404))
+ 
+(('notifyAll', '/usr/lib/python2.6/threading.py', 288), (116, 0.3298649787902832, 0.31601800000134972))
+ 
+(('_checkOpen', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 1400), (117, 0.0032482147216796875, 0.0))
+ 
+(('_acquire_restore', '/usr/lib/python2.6/threading.py', 216), (119, 0.52397418022155762, 0.52003399999739486))
+ 
+(('wait', '/usr/lib/python2.6/threading.py', 228), (119, 10657.345429897308, 10841.357548999993))
+ 
+(('_release_save', '/usr/lib/python2.6/threading.py', 213), (119, 0.0046584606170654297, 0.0040000000008149073))
+ 
+(('t_id', '/home/melnikovkolya/classes/semester-3-project/flowy/parser.py', 155), (121, 0.0049595832824707031, 0.0040009999999999213))
+ 
+(('_compile', '/usr/lib/python2.6/sre_compile.py', 38), (139, 0.34765720367431641, 0.36801000000000017))
+ 
+(('__init__', '/usr/lib/python2.6/sre_parse.py', 96), (139, 0.0040760040283203125, 0.0040010000000001433))
+ 
+(('bind', '/usr/lib/pymodules/python2.6/ply/yacc.py', 1240), (157, 0.0056459903717041016, 0.0080009999999999248))
+ 
+(('__init__', '/usr/lib/pymodules/python2.6/ply/yacc.py', 1226), (157, 0.0065135955810546875, 0.0040000000000000036))
+ 
+(('_deepcopy_list', '/usr/lib/python2.6/copy.py', 224), (158, 3.1772556304931641, 1.89612599999964))
+ 
+(('from_atom', '/usr/local/lib/python2.6/dist-packages/tables/description.py', 136), (163, 0.40211606025695801, 0.20401399999900605))
+ 
+(('append', '/usr/lib/python2.6/sre_parse.py', 144), (164, 0.0057592391967773438, 0.01200100000000015))
+ 
+(('ismethod', '/usr/lib/python2.6/inspect.py', 67), (171, 0.023562192916870117, 0.0))
+ 
+(('getargs', '/usr/lib/python2.6/inspect.py', 731), (171, 0.053690433502197266, 0.040003999998589279))
+ 
+(('getargspec', '/usr/lib/python2.6/inspect.py', 791), (171, 0.20256519317626953, 0.072004999998171115))
+ 
+(('isfunction', '/usr/lib/python2.6/inspect.py', 142), (171, 0.0052220821380615234, 0.0040000000008149073))
+ 
+(('iscode', '/usr/lib/python2.6/inspect.py', 209), (171, 0.0052673816680908203, 0.0079999999979918357))
+ 
+(('_get_init_args', '/usr/local/lib/python2.6/dist-packages/tables/atom.py', 573), (171, 0.28468012809753418, 0.11200800000005984))
+ 
+(('func_code', '/usr/lib/pymodules/python2.6/ply/yacc.py', 91), (174, 0.0055019855499267578, 0.0))
+ 
+(('func_code', '/usr/lib/pymodules/python2.6/ply/lex.py', 51), (177, 0.00527191162109375, 0.0))
+ 
+(('_deepcopy_dict', '/usr/lib/python2.6/copy.py', 251), (189, 1.6356081962585449, 1.0400690000024042))
+ 
+(('_reconstructor', '/usr/lib/python2.6/copy_reg.py', 46), (189, 0.023641347885131836, 0.004001000001153443))
+ 
+(('getwidth', '/usr/lib/python2.6/sre_parse.py', 146), (191, 0.052240133285522461, 0.060001999999999667))
+ 
+(('prefix', '/usr/local/lib/python2.6/dist-packages/tables/atom.py', 352), (193, 0.0070273876190185547, 0.0))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/description.py', 218), (193, 0.11548066139221191, 0.10000799999761512))
+ 
+(('isident', '/usr/lib/python2.6/sre_parse.py', 216), (206, 0.0056557655334472656, 0.0040000000000000036))
+ 
+(('__setitem__', '/usr/lib/pymodules/python2.6/ply/yacc.py', 201), (208, 0.0063018798828125, 0.0040000000000000036))
+ 
+(('joinPaths', '/usr/local/lib/python2.6/dist-packages/tables/description.py', 533), (216, 0.0057065486907958984, 0.0039999999971769284))
+ 
+(('<lambda>', '/usr/local/lib/python2.6/dist-packages/tables/atom.py', 514), (216, 0.0078222751617431641, 0.012000999999145279))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 2890), (216, 0.0081388950347900391, 0.0040000000008149073))
+ 
+(('copy', '/usr/lib/python2.6/copy.py', 65), (217, 0.084427833557128906, 0.072005000001809094))
+ 
+(('_deepcopy_tuple', '/usr/lib/python2.6/copy.py', 232), (220, 0.15613865852355957, 0.068004000000655651))
+ 
+(('token', '/usr/lib/pymodules/python2.6/ply/lex.py', 304), (222, 0.043691873550415039, 0.044003999999999932))
+ 
+(('_identityfunction', '/usr/lib/python2.6/sre_compile.py', 24), (228, 0.0059294700622558594, 0.0))
+ 
+(('__len__', '/usr/lib/python2.6/sre_parse.py', 132), (250, 0.0083570480346679688, 0.012000999999999928))
+ 
+(('from_kind', '/usr/local/lib/python2.6/dist-packages/tables/atom.py', 440), (260, 0.22029495239257812, 0.17201100001329905))
+ 
+(('_g_col', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 2641), (317, 0.02419281005859375, 0.01599999999962165))
+ 
+(('__setattr__', '/usr/local/lib/python2.6/dist-packages/tables/group.py', 803), (328, 0.012391090393066406, 0.024000000001251465))
+ 
+(('__new__', '<string>', 8), (342, 0.01979374885559082, 0.012001999999483814))
+ 
+(('_deepcopy_atomic', '/usr/lib/python2.6/copy.py', 197), (352, 0.017214298248291016, 0.024000000001251465))
+ 
+(('__newobj__', '/usr/lib/python2.6/copy_reg.py', 92), (406, 0.016112804412841797, 0.016000999996322207))
+ 
+(('__getitem__', '/usr/lib/pymodules/python2.6/ply/yacc.py', 197), (436, 0.013558387756347656, 0.0080010000000001469))
+ 
+(('_reconstruct', '/usr/lib/python2.6/copy.py', 300), (437, 2.0792980194091797, 1.3320890000031795))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/atom.py', 656), (437, 0.25737309455871582, 0.18001000001095235))
+ 
+(('_normalize_shape', '/usr/local/lib/python2.6/dist-packages/tables/atom.py', 130), (469, 0.053843259811401367, 0.052005000005010515))
+ 
+(('<genexpr>', '/usr/local/lib/python2.6/dist-packages/tables/atom.py', 527), (469, 0.012288808822631836, 0.012001000002783258))
+ 
+(('__init__', '/usr/local/lib/python2.6/dist-packages/tables/atom.py', 519), (469, 0.23362064361572266, 0.17601300001115305))
+ 
+(('_normalize_default', '/usr/local/lib/python2.6/dist-packages/tables/atom.py', 152), (469, 0.041225671768188477, 0.024002000001928536))
+ 
+(('<genexpr>', '/usr/local/lib/python2.6/dist-packages/tables/atom.py', 150), (469, 0.012531280517578125, 0.016000999999960186))
+ 
+(('match', '/usr/lib/python2.6/sre_parse.py', 201), (512, 0.037920475006103516, 0.036000000000000032))
+ 
+(('<genexpr>', '/usr/local/lib/python2.6/dist-packages/tables/atom.py', 580), (513, 0.016402482986450195, 0.0040000000008149073))
+ 
+(('__getitem__', '/usr/lib/python2.6/sre_parse.py', 136), (539, 0.02490234375, 0.036001000000000172))
+ 
+(('get', '/usr/lib/python2.6/sre_parse.py', 207), (709, 0.077857732772827148, 0.076003000000000043))
+ 
+(('__getattr__', '/usr/local/lib/python2.6/dist-packages/tables/attributeset.py', 293), (826, 0.53875136375427246, 0.24001400000270223))
+ 
+(('issysattrname', '/usr/local/lib/python2.6/dist-packages/tables/attributeset.py', 76), (861, 0.05054020881652832, 0.040002000001550186))
+ 
+(('_g_getnode', '/usr/local/lib/python2.6/dist-packages/tables/attributeset.py', 207), (915, 0.13512516021728516, 0.12000599999373662))
+ 
+(('__next', '/usr/lib/python2.6/sre_parse.py', 188), (987, 0.052829265594482422, 0.044001000000000179))
+ 
+(('_keep_alive', '/usr/lib/python2.6/copy.py', 261), (1139, 0.094742774963378906, 0.044003999999404186))
+ 
+(('put', '/home/melnikovkolya/classes/semester-3-project/flowy/merger.py', 9), (1633, 0.53054642677307129, 0.4280369999796676))
+ 
+(('or_op', '/home/melnikovkolya/classes/semester-3-project/flowy/operators.py', 42), (1633, 0.06103062629699707, 0.064007000011770288))
+ 
+(('_f_walk', '/usr/local/lib/python2.6/dist-packages/tables/description.py', 597), (1641, 0.07251429557800293, 0.076007000003301073))
+ 
+(('deepcopy', '/usr/lib/python2.6/copy.py', 144), (1912, 7.6241989135742188, 4.6243060000015248))
+ 
+(('__call__', '/home/melnikovkolya/classes/semester-3-project/flowy/allen_index.py', 79), (2392, 0.066572666168212891, 0.064002999999502208))
+ 
+(('__call__', '/home/melnikovkolya/classes/semester-3-project/flowy/allen_index.py', 92), (2392, 0.063406229019165039, 0.052002999997057486))
+ 
+(('next', '/home/melnikovkolya/classes/semester-3-project/flowy/merger.py', 151), (2392, 15133.992086648941, 14863.716920000006))
+ 
+(('pass_allen_indices_down', '/home/melnikovkolya/classes/semester-3-project/flowy/merger.py', 78), (2392, 5.3669826984405518, 4.0682569999771658))
+ 
+(('read_row', '/home/melnikovkolya/classes/semester-3-project/flowy/record.py', 137), (3266, 15.117149591445923, 14.024838999965141))
+ 
+(('get_interval_records', '/home/melnikovkolya/classes/semester-3-project/flowy/timeindex.py', 57), (4784, 3.6127510070800781, 2.3081400000082795))
+ 
+(('next', '/usr/local/lib/python2.6/dist-packages/tables/vlarray.py', 552), (4784, 2.3432192802429199, 1.4280830000025162))
+ 
+(('next_branch', '/home/melnikovkolya/classes/semester-3-project/flowy/merger.py', 66), (4784, 0.13327312469482422, 0.12400600000182749))
+ 
+(('add', '/home/melnikovkolya/classes/semester-3-project/flowy/timeindex.py', 48), (4820, 4.9994432926177979, 2.6681820000048901))
+ 
+(('update_min_max_time', '/home/melnikovkolya/classes/semester-3-project/flowy/timeindex.py', 38), (4820, 0.22450447082519531, 0.10000299999774143))
+ 
+(('len', '/home/melnikovkolya/classes/semester-3-project/flowy/timeindex.py', 29), (4820, 0.31543779373168945, 0.14800999998988118))
+ 
+(('<genexpr>', '/home/melnikovkolya/classes/semester-3-project/flowy/merger.py', 160), (4899, 0.32368016242980957, 0.14000999999188934))
+ 
+(('new_group', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper.py', 21), (8209, 38.275750398635864, 37.966419999997015))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/aggr_operators.py', 62), (8209, 0.55724692344665527, 0.8800680000003922))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/aggr_operators.py', 141), (8209, 0.56306171417236328, 0.69204699999681907))
+ 
+(('create_modules_aggr', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper.py', 163), (8209, 2.0085594654083252, 1.9321239999972022))
+ 
+(('bitAND', '/home/melnikovkolya/classes/semester-3-project/flowy/operators.py', 26), (8209, 0.44151520729064941, 0.30002200000126322))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/aggr_operators.py', 25), (8209, 0.5666811466217041, 0.74404600000525534))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/aggr_operators.py', 96), (8209, 1.3313522338867188, 0.96006100000522565))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/aggr_operators.py', 79), (8209, 0.98292064666748047, 0.31201400000281865))
+ 
+(('create_aggr_ops', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper.py', 172), (8209, 33.414367437362671, 33.61013400000229))
+ 
+(('export', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper.py', 203), (8209, 18.683615446090698, 9.036556999946697))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper.py', 151), (8209, 36.858602523803711, 36.630342999991626))
+ 
+(('__iter__', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper.py', 25), (8211, 20219.451322078705, 20932.852232000798))
+ 
+(('get_interval', '/home/melnikovkolya/classes/semester-3-project/flowy/timeindex.py', 33), (9604, 1.2529714107513428, 1.2960850000126811))
+ 
+(('convertToNPAtom', '/usr/local/lib/python2.6/dist-packages/tables/utils.py', 79), (16172, 18.547049999237061, 16.853049000066676))
+ 
+(('_f_getChild', '/usr/local/lib/python2.6/dist-packages/tables/group.py', 663), (16172, 16.804285764694214, 11.332684000026347))
+ 
+(('flavor_of', '/usr/local/lib/python2.6/dist-packages/tables/flavor.py', 171), (16172, 6.6775972843170166, 6.4084059999877354))
+ 
+(('_conv_python_to_numpy', '/usr/local/lib/python2.6/dist-packages/tables/flavor.py', 389), (16172, 3.2069950103759766, 1.860116999996535))
+ 
+(('_getnobjects', '/usr/local/lib/python2.6/dist-packages/tables/vlarray.py', 398), (16172, 94.946576595306396, 96.20998100007273))
+ 
+(('_is_python', '/usr/local/lib/python2.6/dist-packages/tables/flavor.py', 323), (16172, 1.4184434413909912, 2.4401610000131768))
+ 
+(('append', '/usr/local/lib/python2.6/dist-packages/tables/vlarray.py', 452), (16172, 385.18879699707031, 391.28442500016899))
+ 
+(('array_of_flavor', '/usr/local/lib/python2.6/dist-packages/tables/flavor.py', 187), (16172, 15.438640832901001, 14.396902000040427))
+ 
+(('conv_to_numpy', '/usr/local/lib/python2.6/dist-packages/tables/flavor.py', 344), (16172, 4.9252064228057861, 3.016180999991775))
+ 
+(('convertToNPAtom2', '/usr/local/lib/python2.6/dist-packages/tables/utils.py', 114), (16172, 21.558700323104858, 18.093125000079453))
+ 
+(('_is_numpy', '/usr/local/lib/python2.6/dist-packages/tables/flavor.py', 328), (16172, 1.5470161437988281, 0.96406699998988188))
+ 
+(('__getattr__', '/usr/local/lib/python2.6/dist-packages/tables/group.py', 785), (16178, 19.058515310287476, 12.80476400004045))
+ 
+(('sum', '/usr/lib/python2.6/dist-packages/numpy/core/fromnumeric.py', 1185), (16180, 86.684595346450806, 90.773652000061702))
+ 
+(('joinPath', '/usr/local/lib/python2.6/dist-packages/tables/path.py', 122), (16200, 1.5187370777130127, 0.94805099999211961))
+ 
+(('_isWritable', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 1410), (16226, 1.0091426372528076, 0.4920290000118257))
+ 
+(('_checkWritable', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 1415), (16226, 4.2642014026641846, 3.4121979999981704))
+ 
+(('_g_checkHasChild', '/usr/local/lib/python2.6/dist-packages/tables/group.py', 417), (16240, 4.112175464630127, 1.6361010000036913))
+ 
+(('_g_checkOpen', '/usr/local/lib/python2.6/dist-packages/tables/node.py', 374), (16240, 0.88990879058837891, 0.90805100001671235))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/aggr_operators.py', 9), (16416, 0.9982764720916748, 1.0080560000005789))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/aggr_operators.py', 111), (16418, 0.97502565383911133, 1.3320870000061404))
+ 
+(('append', '/home/melnikovkolya/classes/semester-3-project/flowy/pytables.py', 118), (22113, 413.17530179023743, 412.41372800016688))
+ 
+(('task_done', '/usr/lib/python2.6/Queue.py', 45), (22810, 67.266116380691528, 69.376329999999143))
+ 
+(('_get', '/usr/lib/python2.6/Queue.py', 208), (22811, 4.7672314643859863, 1.2320720000116125))
+ 
+(('_put', '/usr/lib/python2.6/Queue.py', 204), (22811, 1.259291410446167, 2.4361499999988609))
+ 
+(('put', '/usr/lib/python2.6/Queue.py', 107), (22811, 165.07228136062622, 175.91898199991579))
+ 
+(('split', '/home/melnikovkolya/classes/semester-3-project/flowy/splitter.py', 17), (22811, 171.19394636154175, 182.82742799990979))
+ 
+(('__iter__', '/home/melnikovkolya/classes/semester-3-project/flowy/filter.py', 15), (22812, 914.74895477294922, 945.61510499965675))
+ 
+(('__iter__', '/home/melnikovkolya/classes/semester-3-project/flowy/splitter.py', 37), (22813, 258.71072959899902, 266.49664500002473))
+ 
+(('get', '/usr/lib/python2.6/Queue.py', 150), (22814, 150.85909199714661, 153.76158300002135))
+ 
+(('empty', '/usr/lib/python2.6/Queue.py', 93), (22815, 35.282126903533936, 36.642283999995925))
+ 
+(('__call__', '/home/melnikovkolya/classes/semester-3-project/flowy/aggr_operators.py', 68), (31017, 2.7790284156799316, 2.5281559999912133))
+ 
+(('__call__', '/home/melnikovkolya/classes/semester-3-project/flowy/aggr_operators.py', 31), (31020, 3.7186253070831299, 2.5441570000075444))
+ 
+(('__call__', '/home/melnikovkolya/classes/semester-3-project/flowy/aggr_operators.py', 102), (31020, 1.7362370491027832, 1.8761179999855813))
+ 
+(('__call__', '/home/melnikovkolya/classes/semester-3-project/flowy/aggr_operators.py', 85), (31020, 2.9057433605194092, 2.7481640000096377))
+ 
+(('__call__', '/home/melnikovkolya/classes/semester-3-project/flowy/aggr_operators.py', 147), (31020, 2.3475019931793213, 2.2001420000087819))
+ 
+(('notify', '/usr/lib/python2.6/threading.py', 270), (45738, 140.78615832328796, 150.28141099993445))
+ 
+(('_qsize', '/usr/lib/python2.6/Queue.py', 200), (45741, 4.5908727645874023, 4.4162810000161699))
+ 
+(('_is_owned', '/usr/lib/python2.6/threading.py', 219), (45855, 125.10483431816101, 133.50436399995306))
+ 
+(('_note', '/usr/lib/python2.6/threading.py', 64), (45873, 3.5862228870391846, 3.1721919999945385))
+ 
+(('__call__', '/home/melnikovkolya/classes/semester-3-project/flowy/aggr_operators.py', 117), (62034, 7.7535879611968994, 4.1762439999965864))
+ 
+(('__call__', '/home/melnikovkolya/classes/semester-3-project/flowy/aggr_operators.py', 15), (62034, 4.9642887115478516, 3.5122199999968871))
+ 
+(('new_op', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper.py', 92), (73881, 16.079083919525146, 14.632925999982035))
+ 
+(('LT', '/home/melnikovkolya/classes/semester-3-project/flowy/operators.py', 71), (152069, 13.969250202178955, 9.8246090000284312))
+ 
+(('final_result', '/home/melnikovkolya/classes/semester-3-project/flowy/filter.py', 80), (246349, 60.500575304031372, 54.087404999956789))
+ 
+(('reset', '/home/melnikovkolya/classes/semester-3-project/flowy/filter.py', 64), (246349, 111.18868279457092, 105.20649999988791))
+ 
+(('deep_copy', '/home/melnikovkolya/classes/semester-3-project/flowy/filter.py', 41), (246351, 61.105264902114868, 52.447237999959725))
+ 
+(('__iter__', '/home/melnikovkolya/classes/semester-3-project/flowy/pytables.py', 89), (250377, 128.07371306419373, 122.62363699984053))
+ 
+(('iterate_fixed_fields', '/home/melnikovkolya/classes/semester-3-project/flowy/pytables.py', 93), (250377, 81.752978563308716, 74.712657999931253))
+ 
+(('__iter__', '/home/melnikovkolya/classes/semester-3-project/flowy/record.py', 129), (250377, 336.43062138557434, 343.01345199924253))
+ 
+(('mask', '/home/melnikovkolya/classes/semester-3-project/flowy/filter.py', 71), (492698, 59.059696674346924, 48.559062999958314))
+ 
+(('match', '/home/melnikovkolya/classes/semester-3-project/flowy/filter.py', 113), (509112, 201.0359148979187, 195.16825499970582))
+ 
+(('match', '/home/melnikovkolya/classes/semester-3-project/flowy/merger.py', 72), (3137176, 770.75759077072144, 749.61094304290964))
+ 
+(('read_row', '/home/melnikovkolya/classes/semester-3-project/flowy/pytables.py', 99), (3152836, 13413.966747999191, 13149.705791366749))
+ 
+(('iterrows', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 1441), (3152853, 2847.1434261798859, 2791.3104361655387))
+ 
+(('_get_container', '/usr/local/lib/python2.6/dist-packages/tables/table.py', 669), (3152853, 169.87609815597534, 154.98565101060376))
+ 
+(('<lambda>', '/usr/local/lib/python2.6/dist-packages/tables/leaf.py', 197), (3152867, 86.064342260360718, 76.52479300505729))
+ 
+(('read_rows_list', '/home/melnikovkolya/classes/semester-3-project/flowy/pytables.py', 105), (3155228, 13582.554839611053, 13318.368595361764))
+ 
+(('read_rows_list', '/home/melnikovkolya/classes/semester-3-project/flowy/record.py', 133), (3155228, 14223.106386899948, 13948.747855334786))
+ 
+(('newfget', '/usr/local/lib/python2.6/dist-packages/tables/utils.py', 224), (3175278, 99.648912668228149, 88.921667005884956))
+ 
+(('__init__', '/home/melnikovkolya/classes/semester-3-project/flowy/record.py', 82), (3413051, 522.62214875221252, 501.33129404957072))
+ 
+(('match', '/home/melnikovkolya/classes/semester-3-project/flowy/merger.py', 23), (4397019, 553.19540309906006, 531.55333503122165))
+ 
+(('read', '/usr/local/lib/python2.6/dist-packages/tables/vlarray.py', 700), (6280932, 6694.1691343784332, 6541.9808274548959))
+ 
+(('<lambda>', '/usr/local/lib/python2.6/dist-packages/tables/leaf.py', 243), (6280932, 165.18905258178711, 141.83687900967561))
+ 
+(('internal_to_flavor', '/usr/local/lib/python2.6/dist-packages/tables/flavor.py', 150), (6285668, 1241.2321634292603, 1200.2193500868016))
+ 
+(('flavor_to_flavor', '/usr/local/lib/python2.6/dist-packages/tables/flavor.py', 130), (6285668, 920.82357239723206, 885.05146706402957))
+ 
+(('_conv_numpy_to_python', '/usr/local/lib/python2.6/dist-packages/tables/flavor.py', 465), (6285668, 245.37669491767883, 212.76530701557567))
+ 
+(('<lambda>', '/usr/local/lib/python2.6/dist-packages/tables/atom.py', 511), (6297148, 176.32034802436829, 156.25368801116201))
+ 
+(('array_of_flavor2', '/usr/local/lib/python2.6/dist-packages/tables/flavor.py', 110), (6301840, 594.53782534599304, 562.19098804149326))
+ 
+(('__getitem__', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 249), (6322857, 253.65313673019409, 221.51785001508688))
+ 
+(('_getNode', '/usr/local/lib/python2.6/dist-packages/tables/file.py', 880), (6323076, 648.34474611282349, 619.23076704233608))
+ 
+(('<genexpr>', '/home/melnikovkolya/classes/semester-3-project/flowy/pytables.py', 102), (9433720, 7178.6332139968872, 7026.6352255172096))
+ 
+(('_processRangeRead', '/usr/local/lib/python2.6/dist-packages/tables/leaf.py', 449), (9433785, 4368.2701687812805, 4262.7936753118302))
+ 
+(('__len__', '/usr/local/lib/python2.6/dist-packages/tables/leaf.py', 293), (9433785, 249.99315619468689, 206.95274501475433))
+ 
+(('_processRange', '/usr/local/lib/python2.6/dist-packages/tables/leaf.py', 425), (9433785, 3676.16250872612, 3576.8311242603595))
+ 
+(('idx2long', '/usr/local/lib/python2.6/dist-packages/tables/utils.py', 66), (25148502, 1995.707435131073, 1876.7011831339769))
+ 
+(('is_idx', '/usr/local/lib/python2.6/dist-packages/tables/utils.py', 44), (25148502, 700.56697034835815, 591.32907204183357))
+ 
+(('match', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper.py', 178), (30651429, 17337.516788959503, 17566.637794171394))
+ 
+(('match', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper.py', 101), (30677828, 12477.594463348389, 12583.8665639143))
+ 
+(('match', '/home/melnikovkolya/classes/semester-3-project/flowy/grouper.py', 126), (35383022, 8230.0888061523438, 8037.6824171527333))
+ 
+(('EQ', '/home/melnikovkolya/classes/semester-3-project/flowy/operators.py', 63), (40143460, 2728.9575715065002, 2304.1001345953482))
+ 
