@@ -7,3 +7,5 @@
  - merge ft2hdf.py, print_hdf_in_step.py, printhdf.py
  - convert options.py into flowy.conf
  - add command line options to flowy.py allowing to override config
+ - improve profiling output format
+ - turn profiling on/off by cli switch
