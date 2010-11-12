@@ -1,0 +1,9 @@
+ - remove unecessary stuff from validator_common.py
+ - rename ambiguous variable names (like filter)
+ - remove whitespaces at end of lines
+ - replace tabs by spaces (grep "`echo -e '\011'`" *)
+ - add small test suite
+ - add setup.py
+ - merge ft2hdf.py, print_hdf_in_step.py, printhdf.py
+ - convert options.py into flowy.conf
+ - add command line options to flowy.py allowing to override config
