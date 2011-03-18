@@ -13,21 +13,22 @@ import profiler
 import time
 import ply
 import pickle
+import sys
 #profiler.profile_on()
 
 start = time.clock()
 print start
 
-def run(flwfile):
+def run(args):
 
 	#valstart_elapsed = (time.clock() - start)
     #print "Parsing and validation started:", valstart_elapsed
 
     p = Parser()
 
-    doc = flwfile.read()
-    
-    p.parse(doc)
+    p.parse(args.flwfile.read())
+    if args.trace:
+        p.input.name = args.trace.name
     
     #inps = get_inputs_list(p)
     #print get_input_fields_types(inps[0])
@@ -129,14 +130,15 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='some meaningful description here')
     parser.add_argument('-p', '--profile', action='store_true', help="turn profiling on")
     parser.add_argument('--version',       action='version', version='%(prog)s 2.0')
-    parser.add_argument('flwfile', type=argparse.FileType('r'), help="*.flw file to evaluate")
+    parser.add_argument('--trace', type=argparse.FileType('r'), help="h5 input trace file")
+    parser.add_argument('flwfile', type=argparse.FileType('r'), default=sys.stdin, help="*.flw file to evaluate")
     args = parser.parse_args()
 
     if args.profile:
         profiler.profile_on()
 
     try:
-        run(args.flwfile)
+        run(args)
     except (ply.yacc.YaccError, SyntaxError) as e:
         import sys
         sys.stderr.write(str(e)+'\n')
