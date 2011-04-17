@@ -1,11 +1,32 @@
  - remove unecessary stuff from validator_common.py
- - rename ambiguous variable names (like filter)
+ - rename ambiguous variable names (like filter, file, in, hash, id, map)
  - remove whitespaces at end of lines
  - replace tabs by spaces (grep "`echo -e '\011'`" *)
  - add small test suite
  - add setup.py
  - merge ft2hdf.py, print_hdf_in_step.py, printhdf.py
  - convert options.py into flowy.conf
+ - improve profiling output format (order by number of calls, give duration per call)
+ - make cli options actually work..
  - add command line options to flowy.py allowing to override config
- - improve profiling output format
+ - replace tabs by spaces (grep "`echo -e '\011'`" *)
+ - allow input trace commandline ("-")
  - turn profiling on/off by cli switch
+ - thread affinity
+ - try/except
+ - flow tools integration?
+ - use argparse instead of depracated optparse
+ - merge flowy.py and flow_exec.py
+ - make it as fast as flow tools for simple queries
+ - find a name for flw files
+ - multithreaded merger?
+ - replace deepcopy()
+ - license?
+ - netflow or flow-tools format? IPFIX, flow-tools
+ - make flow-tools (flow-cat, flow-report, flow-export), nfdump compatible yes.
+ - make SIGINT work while in threads
+ - make it possible to only have a filter in an flw file without all the other steps for simple tasks
+ - better parse and interpret profiling output
+
+contact k.v.kanev@gmail.com
+meeting april 5 13:00
