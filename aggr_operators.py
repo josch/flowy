@@ -1,15 +1,13 @@
 import options
-from tables import UInt32Col, UInt64Col
 
 if options.import_grouper_ops:
     external_import = __import__(options.import_grouper_ops)
 
 class last(object):
-    __slots__ = ['field', 'gr_field', 'field_type', 'last']
-    def __init__(self, field, gr_field, field_type):
+    __slots__ = ['field', 'gr_field', 'last']
+    def __init__(self, field, gr_field):
         self.field = field
         self.gr_field = gr_field
-        self.field_type = field_type
         self.last = None
         
     def __call__(self, record = None):
@@ -21,11 +19,10 @@ class last(object):
 
 
 class sum(object):
-    __slots__ = ['field', 'gr_field', 'field_type','sum']
-    def __init__(self, field, gr_field, field_type):
+    __slots__ = ['field', 'gr_field', 'sum']
+    def __init__(self, field, gr_field):
         self.field = field
         self.gr_field = gr_field
-        self.field_type = field_type
         self.sum = 0
         
     def __call__(self, record = None):
@@ -36,11 +33,10 @@ class sum(object):
             return self.sum
 
 class avg(object):
-    __slots__ = ['field', 'gr_field', 'field_type','sum','n','avg']
-    def __init__(self, field, gr_field, field_type):
+    __slots__ = ['field', 'gr_field', 'sum','n','avg']
+    def __init__(self, field, gr_field):
         self.field = field
         self.gr_field = gr_field
-        self.field_type = field_type
         self.sum = 0
         self.n = 0
         self.avg = None
@@ -58,11 +54,10 @@ class avg(object):
             return self.avg
         
 class max(object):
-    __slots__ = ['field', 'gr_field', 'field_type','max']
-    def __init__(self, field, gr_field, field_type):
+    __slots__ = ['field', 'gr_field', 'max']
+    def __init__(self, field, gr_field):
         self.field = field
         self.gr_field = gr_field
-        self.field_type = field_type
         self.max = float("-inf")
 
     def __call__(self, record = None):
@@ -75,11 +70,10 @@ class max(object):
             return self.max
         
 class min(object):
-    __slots__ = ['field', 'gr_field', 'field_type','min']
-    def __init__(self, field, gr_field, field_type):
+    __slots__ = ['field', 'gr_field', 'min']
+    def __init__(self, field, gr_field):
         self.field = field
         self.gr_field = gr_field
-        self.field_type = field_type
         self.min = float("inf")
 
     def __call__(self, record = None):
@@ -92,11 +86,10 @@ class min(object):
             return self.min
 
 class count(object):
-    __slots__ = ['field', 'gr_field', 'field_type','count']
-    def __init__(self, field, gr_field, field_type):
+    __slots__ = ['field', 'gr_field', 'count']
+    def __init__(self, field, gr_field):
         self.field = field
         self.gr_field = gr_field
-        self.field_type = field_type
         self.count = 0
 
     def __call__(self, record = None):
@@ -107,11 +100,10 @@ class count(object):
             return self.count
         
 class union(object):
-    __slots__ = ['field', 'gr_field', 'field_type','union']
-    def __init__(self, field, gr_field, field_type):
+    __slots__ = ['field', 'gr_field', 'union']
+    def __init__(self, field, gr_field):
         self.field = field
         self.gr_field = gr_field
-        self.field_type = field_type
         self.union = []
 
     def __call__(self, record = None):
@@ -122,11 +114,10 @@ class union(object):
             return self.union
         
 class bitAND(object):
-    __slots__ = ['field', 'gr_field', 'field_type','bitAND']
-    def __init__(self, field, gr_field, field_type):
+    __slots__ = ['field', 'gr_field', 'bitAND']
+    def __init__(self, field, gr_field):
         self.field = field
         self.gr_field = gr_field
-        self.field_type = field_type
         self.bitAND = pow(2,field_type.size) - 1 # all 1s for the given size
 
     def __call__(self, record = None):
@@ -137,11 +128,10 @@ class bitAND(object):
             return self.bitAND
         
 class bitOR(object):
-    __slots__ = ['field', 'gr_field', 'field_type','bitOR']
-    def __init__(self, field, gr_field, field_type):
+    __slots__ = ['field', 'gr_field', 'bitOR']
+    def __init__(self, field, gr_field):
         self.field = field
         self.gr_field = gr_field
-        self.field_type = field_type
         self.bitOR = 0
 
     def __call__(self, record = None):

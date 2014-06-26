@@ -1,4 +1,3 @@
-import record
 import options
 from aggr_operators import count
 import time
@@ -14,7 +13,8 @@ class Grouper(object):
         self.aggr_ops = aggr_ops
         self.group_record_fields = self.create_gr_record_fields_list()
         self.group_record_fields = ('rec_id',) + self.group_record_fields
-        self.group_record_types = self.create_gr_record_fields_types()
+        # TODO: blabla
+        #self.group_record_types = self.create_gr_record_fields_types()
         self.group_records = []
         self.branch_name = branch_name
         self.Record = record.get_record_class(self.group_record_fields)
@@ -107,14 +107,13 @@ class Grouper(object):
         return tuple(type_list)
 
 class AggrOp(object):
-    def __init__(self, op, field, gr_field, field_type):
+    def __init__(self, op, field, gr_field):
         self.op = op
         self.field = field
         self.gr_field = gr_field # field name used for the grouping of a set of common entries
-        self.field_type = field_type
         
     def new_op(self):
-        return self.op(self.field, self.gr_field, self.field_type)
+        return self.op(self.field, self.gr_field)
 
 class GrouperModule(object):
     def __init__(self, name, rules, aggr_ops):
@@ -141,8 +140,8 @@ class GrouperRule(object):
 
     def check_is_shortcut(self):
         if self.delta:
-            if (self.old_rec_field in ('stime', 'etime') and
-                self.new_rec_field in ('stime', 'etime')):
+            if (self.old_rec_field in ('First', 'Last') and
+                self.new_rec_field in ('First', 'Last')):
                 return True
             
         return False
@@ -216,7 +215,7 @@ class Group(object):
 
         if matched:
             # self.aggr_ops contains the fields from the aggregation statement of the grouper module
-            # as well as 3 other implicitly stated aggregation operations (etime, stime, records...)
+            # as well as 3 other implicitly stated aggregation operations (Last, First, records...)
             for aggr_op in self.aggr_ops:
                 aggr_op(record)
 #                print aggr_op.gr_field, aggr_op()

@@ -30,23 +30,23 @@ class TimeIndex(object):
     def len(self):
         return len(self.index)
 
-    def get_interval(self, stime, etime):
-        start = int(floor(stime/self.interval))
-        end = int(floor(etime/self.interval) + 1)
+    def get_interval(self, First, Last):
+        start = int(floor(First/self.interval))
+        end = int(floor(Last/self.interval) + 1)
         return xrange(start, end)
 
     def update_min_max_time(self, record):
-        if self.mintime > record.stime:
-            self.mintime = record.stime
-        if self.maxtime < record.etime:
-            self.maxtime = record.etime
+        if self.mintime > record.First:
+            self.mintime = record.First
+        if self.maxtime < record.Last:
+            self.maxtime = record.Last
             
     def get_total_interval(self):
         return self.get_interval(self.mintime, self.maxtime)
 
 
     def add(self, record):
-        interval = self.get_interval(record.stime, record.etime)
+        interval = self.get_interval(record.First, record.Last)
         for i in interval:
             self.index.setdefault(i, set()).add(record.rec_id)
         
@@ -54,9 +54,9 @@ class TimeIndex(object):
         if self.len > self.maxsize:
             print "Warning large index"
             
-    def get_interval_records(self, stime, etime):
+    def get_interval_records(self, First, Last):
         res = set()
-        for i in self.get_interval(stime, etime):
+        for i in self.get_interval(First, Last):
             res |= self.index.setdefault(i, set()) # set union
 
         return sorted(res)

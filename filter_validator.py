@@ -1,6 +1,5 @@
 from validator_common import *
 from copy import deepcopy
-from record import RecordReader
 from statement import FilterRef
 from filter import Rule as RuleImpl
 from filter import Filter as FilterImpl
@@ -17,11 +16,10 @@ class FilterValidator(object):
         # get_input_reader()comes from validator_common.py, takes parsed query 
         # as an input and returns a reader for the parser's input - a reader 
         # object for an HDF table of flow records
-        self.fields = get_input_fields_types(get_input_reader(self.parser)).keys()
         self.pseudo_branches = {}
         # Argument is a reader object that has an access to the description of the
         # stored records, and can create a list of available fields
-        self.input_reader = RecordReader(get_input_reader(parser)) 
+        self.input_reader = get_input_reader(parser) 
         self.impl = self.create_impl()
 
     def check_for_unused_filters(self):
@@ -49,7 +47,7 @@ class FilterValidator(object):
         "Check record field references, for unknown fields"
         for filter in self.filters:
             for rule in iterate_rules(filter):
-                check_rule_fields(rule, self.fields)
+                check_rule_fields(rule, get_input_reader(self.parser))
 
     def change_branch_names_to_id(self):
         """

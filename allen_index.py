@@ -9,7 +9,7 @@ class LT(object):
         self.target = target
 
     def __call__(self, x):
-        return x.etime, x.etime + self.delta
+        return x.Last, x.Last + self.delta
     
 class GT(object):
     """
@@ -22,7 +22,7 @@ class GT(object):
         self.target = target
 
     def __call__(self, x):
-        return x.stime - self.delta, x.stime
+        return x.First - self.delta, x.stime
 
 class m(object):
     """
@@ -36,7 +36,7 @@ class m(object):
         self.target = target
 
     def __call__(self, x):
-        return x.etime, x.etime + self.delta
+        return x.Last, x.Last + self.delta
 
 class mi(object):
     """
@@ -50,7 +50,7 @@ class mi(object):
         self.target = target
 
     def __call__(self, x):
-        return x.stime - self.delta, x.stime
+        return x.First - self.delta, x.stime
 
 class o(object):
     """
@@ -64,7 +64,7 @@ class o(object):
         self.target = target
 
     def __call__(self, x):
-        return x.etime-self.delta, x.etime+self.delta
+        return x.Last-self.delta, x.Last+self.delta
 
 class oi(object):
     """
@@ -77,7 +77,7 @@ class oi(object):
         self.target = target
 
     def __call__(self, x):
-        return x.stime, x.stime
+        return x.First, x.stime
 
 class d(object):
     """
@@ -90,7 +90,7 @@ class d(object):
         self.target = target
 
     def __call__(self, x):
-        return x.stime, x.stime
+        return x.First, x.stime
 
 class di(object):
     """
@@ -103,7 +103,7 @@ class di(object):
         self.target = target
 
     def __call__(self, x):
-        return x.stime, x.etime
+        return x.First, x.Last
 
 
 class f(object):
@@ -117,7 +117,7 @@ class f(object):
         self.target = target
 
     def __call__(self, x):
-        return x.etime - self.delta, x.etime + self.delta
+        return x.Last - self.delta, x.Last + self.delta
 
 class fi(object):
     """
@@ -130,7 +130,7 @@ class fi(object):
         self.target = target
 
     def __call__(self, x):
-        return x.etime - self.delta, x.etime + self.delta
+        return x.Last - self.delta, x.Last + self.delta
 
 class s(object):
     """
@@ -143,7 +143,7 @@ class s(object):
         self.target = target
 
     def __call__(self, x):
-        return x.stime - self.delta, x.stime + self.delta
+        return x.First - self.delta, x.stime + self.delta
 
 class si(object):
     """
@@ -156,7 +156,7 @@ class si(object):
         self.target = target
 
     def __call__(self, x):
-        return x.stime - self.delta, x.stime + self.delta
+        return x.First - self.delta, x.stime + self.delta
 
 class EQ(object):
     """
@@ -169,4 +169,4 @@ class EQ(object):
         self.target = target
 
     def __call__(self, x):
-        return x.stime - self.delta, x.stime + self.delta
+        return x.First - self.delta, x.stime + self.delta

@@ -1,4 +1,3 @@
-from record import RecordReader
 from filter import Rule
 import profiler
 

@@ -5,7 +5,6 @@ from groupfilter import Rule as RuleImpl
 from groupfilter import GroupFilter as GroupFilterImpl
 from groupfilter import AcceptGroupFilter as AcceptGroupFilterImpl
 from operators import NOT
-import pytables
 from timeindex import TimeIndex
 import time
 
@@ -39,7 +38,15 @@ class GroupFilterValidator(object):
         for filter in self.filters:
             for rule in iterate_rules(filter):
                 for branch in filter.branches:
-                    check_rule_fields(rule, self.branches_fields[branch])
+                    for arg in rule.args:
+                        if type(arg) is Field:
+                            if arg.name in self.branches_fields[branch]:
+                                continue
+                            else:
+                                msg = 'There is no such field %s, '%arg.name
+                                msg += 'referenced at line %s'%rule.line
+                                raise SyntaxError(msg)
+
     
 
     def get_branches_fields(self):
@@ -96,14 +103,15 @@ class GroupFilterValidator(object):
                 records = self.br_name_to_grouper[br_name]
                 index = TimeIndex(5000)
                 grouper = records
-                field_types = dict(zip(grouper.group_record_fields,
-                                       grouper.group_record_types))
+                # TODO: dont use pytables here
+                #field_types = dict(zip(grouper.group_record_fields,
+                #                       grouper.group_record_types))
 #                print records
-                fname = options.temp_path + options.groups_file_prefix
-                fname += br_name+".h5"
-                if options.delete_temp_files: if_exists_delete(fname)
-                file = pytables.create_table_file(fname, field_types)
-                groups_table = pytables.FlowRecordsTable(fname) # Create separate table files for each of the branches
+                #fname = options.temp_path + options.groups_file_prefix
+                #fname += br_name+".h5"
+                #if options.delete_temp_files: if_exists_delete(fname)
+                #file = pytables.create_table_file(fname, field_types)
+                #groups_table = pytables.FlowRecordsTable(fname) # Create separate table files for each of the branches
                 filt_impl = GroupFilterImpl(rules_impl, records, br_name,
                                             groups_table, index)
                 group_filters_impl.append(filt_impl)
@@ -120,13 +128,14 @@ class GroupFilterValidator(object):
                 records = self.br_name_to_grouper[br_name]
                 index = TimeIndex(5000)
                 grouper = records
-                field_types = dict(zip(grouper.group_record_fields,
-                                       grouper.group_record_types))
-                fname = options.temp_path + options.groups_file_prefix
-                fname += br_name+".h5"
-                if options.delete_temp_files: if_exists_delete(fname)
-                file = pytables.create_table_file(fname, field_types)
-                groups_table = pytables.FlowRecordsTable(fname)
+                # TODO: dont use pytables here
+                #field_types = dict(zip(grouper.group_record_fields,
+                #                       grouper.group_record_types))
+                #fname = options.temp_path + options.groups_file_prefix
+                #fname += br_name+".h5"
+                #if options.delete_temp_files: if_exists_delete(fname)
+                #file = pytables.create_table_file(fname, field_types)
+                #groups_table = pytables.FlowRecordsTable(fname)
                 filt_impl = AcceptGroupFilterImpl(records, br_name,
                                             groups_table, index) 	# This class is called in case some branch is missing 
                                             						# the definition of a group-filter. Essentially a plain

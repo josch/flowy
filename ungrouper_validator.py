@@ -1,9 +1,6 @@
 from copy import deepcopy
-from pytables import create_table_file
 from ungrouper import Ungrouper as UngrouperImpl
-from record import RecordReader
 from validator_common import *
-from pytables import FlowRecordsTable, create_table_file
 import options
 
 class UngrouperValidator(object):

@@ -1,7 +1,6 @@
 from copy import deepcopy
 from copy import copy
 from statement import Field
-from record import RecordReader
 import time
 import profiler
 

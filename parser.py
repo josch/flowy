@@ -508,10 +508,10 @@ class Parser(object):
         # insert aggregation of record ids (needed for ungrouping later)
         p[0].aggr.insert(0,(Rule('union', p.lineno(2), [Field('rec_id'),
                                                         'records'])))
-        p[0].aggr.insert(0,(Rule('min', p.lineno(2), [Field('stime'),
-                                                        'stime'])))
-        p[0].aggr.insert(0,(Rule('max', p.lineno(2), [Field('etime'),
-                                                        'etime'])))
+        p[0].aggr.insert(0,(Rule('min', p.lineno(2), [Field('First'),
+                                                        'First'])))
+        p[0].aggr.insert(0,(Rule('max', p.lineno(2), [Field('Last'),
+                                                        'Last'])))
         self.groupers.append(p[0])
 
     def p_module1_n(self, p):

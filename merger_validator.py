@@ -1,6 +1,5 @@
 from validator_common import *
 from copy import deepcopy
-from tables import UIntCol
 from merger import MergerStorage
 from merger import Merger as MergerImpl
 from merger import MergerBranch as MergerBranchImpl
@@ -9,8 +8,6 @@ from merger import MergerRejectBranch as MergerRejectBranchImpl
 from merger import MergerRule as MergerRuleImpl
 import itertools
 import allen_ops
-import pytables
-import record
 import options
 
 class MergerValidator(object):
@@ -19,8 +16,8 @@ class MergerValidator(object):
         self.gr_filter_validator = gr_filter_validator
         self.mergers = deepcopy(parser.mergers)
         # The last field returns a list of the present fields for each branch
-        # ('rec_id', 'etime', 'stime', 'records', 'srcip', 'dstip', 'bytes', 'n', 'flags', 'srcports')
-		# ('rec_id', 'etime', 'stime', 'records', 'srcip', 'dstip', 'bytes', 'n', 'flags', 'dstports')
+        # ('rec_id', 'Last', 'First', 'records', 'srcip', 'dstip', 'bytes', 'n', 'flags', 'srcports')
+		# ('rec_id', 'Last', 'First', 'records', 'srcip', 'dstip', 'bytes', 'n', 'flags', 'dstports')
         self.branches_fields = gr_filter_validator.branches_fields
         # A simple dictionary mapptin of branch name to a GroupFilter
         # {'A': <groupfilter.GroupFilter object at 0x9c3d66c>, 'B': <groupfilter.GroupFilter object at 0x9c43ccc>} 

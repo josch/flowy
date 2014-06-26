@@ -1,5 +1,5 @@
 from statement import Rule, GrouperRule, AllenRule, Field, Arg
-from pytables import FlowRecordsTable
+from ftreader import FtReader
 import os
 
 def flatten(l):
@@ -49,19 +49,20 @@ def find_op(rule, module='operators'):
                                                             rule.line))
 
 def get_input_reader(parser):
+# TODO: create reader somewhere else
     """Returns a reader for the parser's input"""
-    return FlowRecordsTable(parser.input.name) # parser.input.name is the ./netflow-trace.h5 file
+    if not getattr(parser, "reader", None):
+        parser.reader = FtReader(parser.input.name)
+    return parser.reader
 
-def get_input_fields_types(input_reader):
-    return dict((f, t) for f, t in zip(input_reader.fields,
-                                       input_reader.types))
-
-def check_rule_fields(rule, fields):
+def check_rule_fields(rule, reader):
     for arg in rule.args:
         if type(arg) is Field: 
-            if arg.name in fields:
+            if reader.supports_attr(arg.name):
                 continue
             else:
+                if arg.name == "rec_id":
+                    continue
                 msg = 'There is no such field %s, '%arg.name
                 msg += 'referenced at line %s'%rule.line
                 raise SyntaxError(msg)

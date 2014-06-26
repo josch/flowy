@@ -1,6 +1,5 @@
 from validator_common import *
 from copy import deepcopy
-from tables import UIntAtom, UIntCol
 from grouper import GrouperModule as GrouperModuleImpl
 from grouper import Grouper as GrouperImpl
 from grouper import GrouperRule as GrouperRuleImpl
@@ -10,8 +9,6 @@ import profiler
 class GrouperValidator(object):
     def __init__(self, parser, splitter_validator):
         self.parser = parser
-        self.fields_types = get_input_fields_types(
-                                    get_input_reader(self.parser))
         self.groupers = deepcopy(parser.groupers)
 #        print splitter_validator.br_name_to_br
         self.br_name_to_br = splitter_validator.br_name_to_br
@@ -66,7 +63,7 @@ class GrouperValidator(object):
                     # Checks if the rule names of modules match those that were established
                     # from the flow records (passed as a second argument here). Defined in
                     # validator_common
-                    check_rule_fields(rule[0], self.fields_types.keys()) 
+                    check_rule_fields(rule[0], get_input_reader(self.parser))
 
 			# This section checks the correctness of the field names passed to the aggregator
 			# section of the grouper stage. field_types are defined in init and are also 
@@ -76,12 +73,14 @@ class GrouperValidator(object):
                     if type(arg) == Field:
                         mod, _, field = arg.name.partition('.')
                         if field != '':
-                            if field not in self.fields_types.keys():
+                            if not get_input_reader(self.parser).supports_attr(field) \
+                                and field != "rec_id":
                                 msg = 'There is no such field %s, '%arg.name
                                 msg += 'referenced at line %s'%aggr.line
                                 raise SyntaxError(msg)
                         else:
-                            if mod not in self.fields_types.keys():
+                            if not get_input_reader(self.parser).supports_attr(mod) \
+                                and mod != "rec_id":
                                 msg = 'There is no such field %s, '%arg.name
                                 msg += 'referenced at line %s'%aggr.line
                                 raise SyntaxError(msg)
@@ -122,12 +121,11 @@ class GrouperValidator(object):
         aggr_ops_list = []
         del_list = []
         for aggr in grouper.aggr:
-            op, field, gr_field, field_type = self.create_aggr_impl_init_args(
-                                                                        aggr)
+            op, field, gr_field = self.create_aggr_impl_init_args(aggr)
             mod_name, _, f = str.partition(field, '.')
             if f != '':
                 if module.name == mod_name:
-                    impl = AggrOpImpl(op, f, gr_field, field_type)
+                    impl = AggrOpImpl(op, f, gr_field)
                     aggr_ops_list.append(impl)
                     del_list.append(aggr)
         
@@ -143,16 +141,10 @@ class GrouperValidator(object):
         else:
             non_qid_field = field
         gr_field = aggr.args[1]
-        if aggr.op == 'count':
-            field_type = UIntCol(self.fields_types['rec_id'].itemsize)
-        elif aggr.op == 'union':
-            field_type = UIntAtom(self.fields_types[non_qid_field].itemsize)
-        else:
-            field_type = UIntCol(self.fields_types[non_qid_field].itemsize)
         
         op = find_op(aggr, 'aggr_operators')
         
-        return op, field, gr_field, field_type
+        return op, field, gr_field
 
     def convert_module_rules(self, module):
         rule_impl_list = []
